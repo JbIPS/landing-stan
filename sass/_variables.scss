@@ -1,0 +1,83 @@
+/* ===================================================================*/
+/* ============================== COLORS ============================ */
+/* ===================================================================*/
+$primary: #004EE8;
+$secondary: #FFF75F;
+$success: #CCE7F5;
+$danger: #FF5C55;
+$info: #EAF5FB;
+$light: #FFF75F;
+$white: #ebf5fa;
+
+/* ===================================================================*/
+/* =============================== TYPO ============================= */
+/* ===================================================================*/
+@font-face {
+    font-family: 'Noah';
+    src: url('../fonts/noah-bold-webfont.woff2') format('woff2'),
+         url('../fonts/noah-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noah';
+    src: url('../fonts/noah-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/noah-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Noah';
+    src: url('../fonts/noah-regularitalic-webfont.woff2') format('woff2'),
+         url('../fonts/noah-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Noah';
+    src: url('../fonts/noah-regular-webfont.woff2') format('woff2'),
+         url('../fonts/noah-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$font-family-sans-serif: 'Noah', sans-serif;
+$font-family-base: $font-family-sans-serif !default;
+$body-color: #004EE8;
+$font-size-base: 1.438rem;
+$line-height-base: 1.2;
+
+$h1-font-size: 5.768rem;
+$h2-font-size: 2.815rem;
+$h3-font-size: 1.87rem;
+$h4-font-size: 1.626rem;
+
+/* ===================================================================*/
+/* =============================== WIDTHS ============================= */
+/* ===================================================================*/
+
+$container-max-widths: (
+  'sm': 100%,
+  'md': 100%,
+  'lg': 100%,
+  'xl': 1264px
+);
+
+$grid-breakpoints: (
+  "xs": 0,
+  "sm": 520px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1366px
+);
+
+$grid-gutter-width: 20px;
+
+/* ===================================================================*/
+/* =============================== OPTIONS ============================= */
+/* ===================================================================*/
+
+$enable-rounded: false;
+$grid-gutter-width: 2rem;
+$spacer: 1.4rem;

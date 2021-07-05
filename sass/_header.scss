@@ -1,0 +1,22 @@
+.header {
+	.btn {
+		@media screen and (min-width: 678px) {
+			font-size: 2.3rem;
+		}
+	}
+}
+
+.navbar-brand {
+	max-width: calc(50% - 20px);
+	padding: 15px 0;
+	svg {
+		max-width: 100%;
+	}
+
+}
+.navbar-btn {
+	margin: 33px 0 13px;
+	max-width: calc(50% - 20px);
+}
+
+
