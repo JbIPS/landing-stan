@@ -1,0 +1,85 @@
+.container {
+	padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.translateY-100 {
+		transform: translateY(calc(-100% - 20px));
+	}
+}
+
+// =====================
+// = STAN WIDTHS =======
+// =====================
+
+.mw-75 {
+	max-width: 75%;
+}
+
+.mw-960 {
+	max-width: 1000px;
+}
+
+@media screen and (max-width: 767px) {
+	.bg-md-danger {
+		background-color: $danger;
+	}
+	.bg-md-primary {
+		background-color: $primary;
+	}
+	.bg-md-secondary {
+		background-color: $secondary;
+	}
+}
+
+// =====================
+// = STAN ANIMATIONS ===
+// =====================
+
+.stan-profile-animate.stan-profile-jerome {
+	opacity: 0;
+}
+
+.stan-profile-animate.stan-profile-jb {
+	opacity: 0;
+}
+
+.stan-profile-animated.stan-profile-jerome {
+	animation-name: animateJerome;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+.stan-profile-animated.stan-profile-jb {
+	animation-name: animateJb;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes animateJb {
+	0% {
+		opacity: 0;
+		transform: translate(120%, 40px);
+	}
+	90% {
+		transform: translate(0%, 40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0%, 0px);
+	}
+}
+
+@keyframes animateJerome {
+	0% {
+		opacity: 0;
+		transform: translate(-120%, -40px);
+	}
+	90% {
+		transform: translate(0%, -40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0%, 0px);
+	}
+}
