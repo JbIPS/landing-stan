@@ -46,5 +46,6 @@ function imgResize(cb) {
 exports.default = function() {
   watch('./sass/*.scss', series(sassCompile));
 };
+exports.build = sassCompile;
 task(imgResize);
 task(webp);
