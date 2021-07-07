@@ -220,3 +220,50 @@
 		}
 	}
 }
+
+
+// ====================
+// = STAN FIXED NAV ===
+// ====================
+
+.fixed-nav {
+	position: fixed;
+	right: 0;
+	top: 10vh;
+	z-index: 3;
+	ul {
+		list-style: none;
+	}
+	li {
+		margin-bottom: 10px;
+		transform: translateX(148px);
+		transition: transform 0.4s;
+		&.active {
+			.stan-bar {
+				background-color: $primary;
+			}
+			.stan-bar-circle {
+				background-color: $danger;
+			}
+			a {
+				color: $white;
+			}
+		}
+		&:hover {
+			transform: translateX(0px);
+		}
+	}
+	a {
+		display: block;
+		width: 100%;
+		line-height: 1;
+		color: $primary;
+		text-decoration: none;
+	}
+	.stan-bar {
+		background-color: $secondary;
+	}
+	.stan-bar-circle {
+		background-color: $primary;
+	}
+}

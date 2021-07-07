@@ -47,7 +47,56 @@
 			</div>
 			<!-- END STAN BAR -->
 		</header><!-- END HEADER -->
-
+		<!-- ============ FIXED NAV ============ -->
+		<nav class="fixed-nav">
+			<ul>
+				<li class="active">
+					<!-- STAN BAR -->
+					<div class="stan-bar stan-bar-right d-none d-lg-block" style="width: 150px; height: 35px;">
+						<div class="stan-bar-bar">
+							<a href="#accueil" class="position-absolute ps-4 pt-2 fs-xs-16">Accueil</a>
+							<div class="stan-bar-circle" style="width: 35px;"></div>
+						</div>
+					</div><!-- END STAN BAR -->
+				</li>
+				<li>
+					<!-- STAN BAR -->
+					<div class="stan-bar stan-bar-right d-none d-lg-block" style="width: 150px; height: 35px;">
+						<div class="stan-bar-bar">
+							<a href="#outil" class="position-absolute ps-4 pt-2 fs-xs-16">Notre outil</a>
+							<div class="stan-bar-circle" style="width: 35px;"></div>
+						</div>
+					</div><!-- END STAN BAR -->
+				</li>
+				<li>
+					<!-- STAN BAR -->
+					<div class="stan-bar stan-bar-right d-none d-lg-block" style="width: 150px; height: 35px;">
+						<div class="stan-bar-bar">
+							<a href="#pourquoi" class="position-absolute ps-4 pt-2 fs-xs-16">Pourquoi</a>
+							<div class="stan-bar-circle" style="width: 35px;"></div>
+						</div>
+					</div><!-- END STAN BAR -->
+				</li>
+				<li>
+					<!-- STAN BAR -->
+					<div class="stan-bar stan-bar-right d-none d-lg-block" style="width: 150px; height: 35px;">
+						<div class="stan-bar-bar">
+							<a href="#apropos" class="position-absolute ps-4 pt-2 fs-xs-16">A propos</a>
+							<div class="stan-bar-circle" style="width: 35px;"></div>
+						</div>
+					</div><!-- END STAN BAR -->
+				</li>
+				<li>
+					<!-- STAN BAR -->
+					<div class="stan-bar stan-bar-right d-none d-lg-block" style="width: 150px; height: 35px;">
+						<div class="stan-bar-bar">
+							<a href="#contact" class="position-absolute ps-4 pt-2 fs-xs-16">Contact</a>
+							<div class="stan-bar-circle" style="width: 35px;"></div>
+						</div>
+					</div><!-- END STAN BAR -->
+				</li>
+			</ul>
+		</nav>
 		<!-- ============ PAGE ============ -->
 		<section class="page">
 			<!-- SECTION HERO -->
@@ -77,7 +126,7 @@
 						<!-- END STAN BAR -->
 					</div>
 				</div><!-- END STAN BAR -->
-				<h1 class="h1 main-title text-center">Ils vont aimer s’affilier !</h1>
+				<h1 id="accueil" class="h1 main-title text-center">Ils vont aimer s’affilier !</h1>
 				<!-- STAN BAR -->
 				<div class="stan-bar d-none d-lg-block" style="width: 25%; height: 120px;">
 					<div class="stan-bar-bar bg-danger">
@@ -186,7 +235,7 @@
 				<p class="pb-2"><a href="#" class="m-auto btn btn-bottom btn-primary">Découvrez ce que Stan <br>peut vous apporter</a></p>
 			</section><!-- END SECTION BOUTON -->
 			<!-- SECTION NOTRE OUTIL -->
-			<section class="section py-5">
+			<section class="section py-5" id="outil">
 				<!-- STAN BAR -->
 				<div class="stan-bar d-none d-md-block" style="min-width: 340px;width: 35%; height: 100px;">
 					<div class="stan-bar-bar bg-secondary">
@@ -195,7 +244,7 @@
 				</div><!-- END STAN BAR -->
 				<div class="bg-md-secondary mb-4 py-3 py-md-0 mb-mb-0">
 					<div class="container">
-						<h2 class="h2 translateY-100">Notre outil</h2>
+						<h2 class="h2 titre-section translateY-100">Notre outil</h2>
 					</div>
 				</div>
 					
@@ -262,9 +311,9 @@
 						<div class="stan-bar-circle bg-secondary" style="width: 100px;"></div>
 					</div>
 				</div><!-- END STAN BAR -->
-				<div class="bg-md-primary mb-4 py-3 py-md-0 mb-mb-0">
+				<div class="bg-md-primary mb-4 py-3 py-md-0 mb-mb-0" id="offre">
 					<div class="container">
-						<h2 class="h2 text-white translateY-100">Notre offre en 3 volets</h2>
+						<h2 class="h2 titre-section text-white translateY-100">Notre offre en 3 volets</h2>
 					</div>
 				</div>
 				<div class="container">
@@ -311,7 +360,7 @@
 				</div><!-- END CONTAINER -->
 			</section><!-- END SECTION OFFRE -->
 			<!-- SECTION POURQUOI -->
-			<section class="section py-5">
+			<section class="section py-5" id="pourquoi">
 				<!-- STAN BAR -->
 				<div class="stan-bar d-none d-md-block" style="min-width: 580px; width: 50%; height: 100px;">
 					<div class="stan-bar-bar bg-danger">
@@ -473,7 +522,7 @@
 				<p class="py-5"><a href="#" class="m-auto btn btn-bottom btn-primary">Nous contacter</a></p>
 			</section><!-- END SECTION -->
 			<!-- SECTION BAR -->
-			<section class="section py-5">
+			<section class="section py-5" id="apropos">
 				<!-- STAN BAR -->
 				<div class="stan-bar d-none d-md-block" style="width: 35%; height: 100px;">
 					<div class="stan-bar-bar bg-secondary">
@@ -610,7 +659,7 @@
 				</div>
 			</section><!-- END SECTION -->
 			<!-- SECTION FORM -->
-			<section class="section bg-primary position-relative py-4">
+			<section class="section bg-primary position-relative py-4" id="contact">
 				<!-- STAN BAR -->
 				<div class="stan-bar stan-bar-right pb-2 pb-sm-0" style="width: 35%; height: 45px;">
 					<div class="stan-bar-bar bg-danger">
