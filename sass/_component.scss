@@ -47,7 +47,7 @@
 	width: 512px;
 	max-width: 100%;
 	text-align: left;
-	background: url('../icon/guillemets-top.svg') no-repeat left 15px top 15px, url('../icon/guillemets.svg') no-repeat right 15px bottom 15px;
+	background: url("../icon/guillemets-top.svg") no-repeat left 15px top 15px, url("../icon/guillemets.svg") no-repeat right 40px bottom 67px;
 	@media screen and (min-width: 768px) {
 		&-absolute {
 			position: absolute;
@@ -229,8 +229,8 @@
 .fixed-nav {
 	position: fixed;
 	right: 0;
-	top: 10vh;
-	z-index: 3;
+	top: 18vh;
+	z-index: 12;
 	ul {
 		list-style: none;
 	}
@@ -238,17 +238,6 @@
 		margin-bottom: 10px;
 		transform: translateX(148px);
 		transition: transform 0.4s;
-		&.active {
-			.stan-bar {
-				background-color: $primary;
-			}
-			.stan-bar-circle {
-				background-color: $danger;
-			}
-			a {
-				color: $white;
-			}
-		}
 		&:hover {
 			transform: translateX(0px);
 		}
@@ -264,6 +253,6 @@
 		background-color: $secondary;
 	}
 	.stan-bar-circle {
-		background-color: $primary;
+		background-color: $danger;
 	}
 }
