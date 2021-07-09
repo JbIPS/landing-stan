@@ -8245,7 +8245,7 @@ section li:before {
 }
 @media screen and (min-width: 768px) {
   .btn {
-    min-height: 60px;
+    min-height: 45px;
   }
 }
 .btn-primary:hover {
@@ -8355,7 +8355,7 @@ section li:before {
   width: 512px;
   max-width: 100%;
   text-align: left;
-  background: url("../icon/guillemets-top.svg") no-repeat left 15px top 15px, url("../icon/guillemets.svg") no-repeat right 15px bottom 15px;
+  background: url("../icon/guillemets-top.svg") no-repeat left 15px top 15px, url("../icon/guillemets.svg") no-repeat right 40px bottom 67px;
 }
 @media screen and (min-width: 768px) {
   .stan-blockquote-absolute {
@@ -8520,8 +8520,8 @@ section li:before {
 .fixed-nav {
   position: fixed;
   right: 0;
-  top: 10vh;
-  z-index: 3;
+  top: 18vh;
+  z-index: 12;
 }
 .fixed-nav ul {
   list-style: none;
@@ -8530,15 +8530,6 @@ section li:before {
   margin-bottom: 10px;
   transform: translateX(148px);
   transition: transform 0.4s;
-}
-.fixed-nav li.active .stan-bar {
-  background-color: #004EE8;
-}
-.fixed-nav li.active .stan-bar-circle {
-  background-color: #FF5C55;
-}
-.fixed-nav li.active a {
-  color: #ebf5fa;
 }
 .fixed-nav li:hover {
   transform: translateX(0px);
@@ -8554,7 +8545,7 @@ section li:before {
   background-color: #FFF75F;
 }
 .fixed-nav .stan-bar-circle {
-  background-color: #004EE8;
+  background-color: #FF5C55;
 }
 
 .form-control,
@@ -8563,6 +8554,10 @@ section li:before {
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
+}
+
+body {
+  padding-top: 100px;
 }
 
 .container {
@@ -8641,10 +8636,26 @@ section li:before {
     transform: translate(0%, 0px);
   }
 }
-@media screen and (min-width: 678px) {
-  .header .btn {
-    font-size: 2.3rem;
-  }
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  left: 0;
+}
+.header svg {
+  height: 64px;
+  transition: all 0.4s;
+}
+
+.scrolled .header .stan-bar {
+  display: none;
+}
+.scrolled .header .navbar-btn {
+  margin-top: 13px;
+}
+.scrolled .header svg {
+  height: 46px;
 }
 
 .navbar-brand {
