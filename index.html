@@ -16,7 +16,7 @@
 	</head>
 
 	<body>
-
+		<span class="hidden target" id="accueil"></span>
 		<!-- ============ HEADER ============ -->
 		<header id="header" class="header bg-primary">
 			<!-- container-lg -->
@@ -81,7 +81,7 @@
 					<!-- STAN BAR -->
 					<div class="stan-bar stan-bar-right d-none d-lg-block" style="width: 150px; height: 35px;">
 						<div class="stan-bar-bar">
-							<a href="#apropos" class="position-absolute ps-4 pt-2 fs-xs-16">A propos</a>
+							<a href="#apropos" class="position-absolute ps-4 pt-2 fs-xs-16">À propos</a>
 							<div class="stan-bar-circle" style="width: 35px;"></div>
 						</div>
 					</div><!-- END STAN BAR -->
@@ -126,7 +126,7 @@
 						<!-- END STAN BAR -->
 					</div>
 				</div><!-- END STAN BAR -->
-				<h1 id="accueil" class="h1 main-title text-center">Ils vont aimer s’affilier !</h1>
+				<h1 class="h1 main-title text-center">Ils vont aimer s’affilier !</h1>
 				<!-- STAN BAR -->
 				<div class="stan-bar d-none d-lg-block" style="width: 25%; height: 120px;">
 					<div class="stan-bar-bar bg-danger">
@@ -228,9 +228,10 @@
 				<div class="container-lg text-center">
 					<h2 class="h2"><small>Et si on permettait à tous les DRH, à toutes les “Michèle”, de retrouver</small><br> la liberté de choisir ses opérateurs <small>(mutuelle, prévoyance…)</small><br> sur leurs qualités, leurs services et leurs valeurs ?</h2>
 				</div>
-			</section><!-- END SECTION BAR DRH -->*
+			</section><!-- END SECTION BAR DRH -->
 			<!-- SECTION NOTRE OUTIL -->
-			<section class="section py-5" id="outil">
+			<span class="hidden target" id="outil"></span>
+			<section class="section py-5">
 				<!-- STAN BAR -->
 				<div class="stan-bar d-none d-md-block" style="min-width: 340px;width: 35%; height: 100px;">
 					<div class="stan-bar-bar bg-secondary">
@@ -299,6 +300,7 @@
 				</div>
 			</section><!-- END SECTION NOTRE OUTIL -->
 			<!-- SECTION OFFRE -->
+			<span class="hidden target" id="offre"></span>
 			<section class="section">
 				<!-- STAN BAR -->
 				<div class="stan-bar d-none d-md-block" style="min-width: 660px;width: 45%; height: 100px;">
@@ -306,7 +308,7 @@
 						<div class="stan-bar-circle bg-secondary" style="width: 100px;"></div>
 					</div>
 				</div><!-- END STAN BAR -->
-				<div class="bg-md-primary mb-4 py-3 py-md-0 mb-mb-0" id="offre">
+				<div class="bg-md-primary mb-4 py-3 py-md-0 mb-mb-0">
 					<div class="container-lg">
 						<h2 class="h2 titre-section text-white translateY-100">Notre offre en 3 volets</h2>
 					</div>
@@ -355,7 +357,8 @@
 				</div><!-- END container-lg -->
 			</section><!-- END SECTION OFFRE -->
 			<!-- SECTION POURQUOI -->
-			<section class="section py-5" id="pourquoi">
+			<span class="hidden target" id="pourquoi"></span>
+			<section class="section py-5">
 				<!-- STAN BAR -->
 				<div class="stan-bar d-none d-md-block" style="min-width: 580px; width: 50%; height: 100px;">
 					<div class="stan-bar-bar bg-danger">
@@ -509,8 +512,9 @@
 				</div>
 				<p class="py-5"><a href="#" class="m-auto btn btn-bottom btn-primary">Nous contacter</a></p>
 			</section><!-- END SECTION -->
+			<span class="hidden target" id="apropos"></span>
 			<!-- SECTION BAR -->
-			<section class="section py-5" id="apropos">
+			<section class="section py-5">
 				<!-- STAN BAR -->
 				<div class="stan-bar d-none d-md-block" style="width: 35%; height: 100px;">
 					<div class="stan-bar-bar bg-secondary">
@@ -647,7 +651,8 @@
 				</div>
 			</section><!-- END SECTION -->
 			<!-- SECTION FORM -->
-			<section class="section bg-primary position-relative py-4" id="contact">
+			<span class="hidden target" id="contact"></span>
+			<section class="section bg-primary position-relative py-4">
 				<!-- STAN BAR -->
 				<div class="stan-bar stan-bar-right pb-2 pb-sm-0" style="width: 35%; height: 45px;">
 					<div class="stan-bar-bar bg-danger">
@@ -799,9 +804,7 @@
 		    const rect = el.getBoundingClientRect();
 		    return (
 		        rect.top >= 0 &&
-		        rect.left >= 0 &&
-		        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-		        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
 		    );
 		}
 
