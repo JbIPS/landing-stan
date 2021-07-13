@@ -661,7 +661,7 @@ progress {
 }
 @media (min-width: 1366px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1264px;
+    max-width: 1080px;
   }
 }
 .row {
@@ -8506,7 +8506,7 @@ section li:before {
   right: 0;
 }
 .stan-profile-jb:after {
-  left: -6%;
+  left: -5.9%;
   width: 15%;
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
 }
@@ -8576,10 +8576,6 @@ body {
 }
 .mw-75 {
   max-width: 75%;
-}
-
-.mw-960 {
-  max-width: 1000px;
 }
 
 @media screen and (max-width: 767px) {
@@ -8652,17 +8648,28 @@ body {
   height: 64px;
   transition: all 0.4s;
 }
+.header a {
+  font-size: 1.5rem;
+  color: #ebf5fa;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+body:not(.scrolled) .header a {
+  padding-top: 11px;
+  font-size: 1.6rem;
+}
 
 .scrolled .header .stan-bar {
   display: none;
 }
 .scrolled .header .navbar-btn {
-  margin-top: 13px;
+  margin-top: 0px;
+  margin-bottom: 0;
 }
 .scrolled .header svg {
-  height: 46px;
+  height: 30px;
 }
-
 .navbar-brand {
   max-width: calc(50% - 20px);
   padding: 15px 0;
