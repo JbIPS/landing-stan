@@ -42,3 +42,4 @@ jobs:
         with:
           publish_dir: .
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: ${{ secrets.DOMAIN }}
