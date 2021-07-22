@@ -8534,6 +8534,15 @@ section li:before {
 .fixed-nav li:hover {
   transform: translateX(0px);
 }
+.fixed-nav li.active .stan-bar {
+  background-color: #004EE8;
+}
+.fixed-nav li.active .stan-bar-circle {
+  background-color: #FFF75F;
+}
+.fixed-nav li.active a {
+  color: #ffffff;
+}
 .fixed-nav a {
   display: block;
   width: 100%;

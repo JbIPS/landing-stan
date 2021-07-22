@@ -241,6 +241,17 @@
 		&:hover {
 			transform: translateX(0px);
 		}
+		&.active {
+			.stan-bar {
+				background-color: $primary;
+			}
+			.stan-bar-circle {
+				background-color: $secondary;
+			}
+			a {
+				color: $white;
+			}
+		}
 	}
 	a {
 		display: block;
