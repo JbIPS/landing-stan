@@ -22,7 +22,7 @@ jobs:
     
     environment:
       name: github-pages
-      url: https://${{ secrets.DOMAIN }}
+      url: https://stan.express
     
     strategy:
       matrix:
