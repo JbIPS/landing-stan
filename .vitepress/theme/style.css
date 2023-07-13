@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("/assets/fonts/Urbanist-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("/assets/fonts/Urbanist-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("/assets/fonts/Urbanist-ExtraBold.woff2") format("woff2");
+  font-weight: 900;
+}
+
+:root {
+  --white: #fff;
+  --blue: #063dd0;
+  --dark: #003caa;
+  --red: #ff6668;
+  --blue-light: #19dee0;
+  --blue-dark: #000061;
+  --grey: #000029;
+}
+
+body {
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  font-family: Urbanist;
+  width: 100vw;
+}
+
+#title {
+  height: 90vh;
+  justify-content: space-evenly;
+}
+
+#title > div {
+  border: 2px solid var(--dark);
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  width: 60%;
+  text-align: center;
+}
+
+nav {
+  border-bottom: 2px solid var(--dark);
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+#button-menu {
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: none;
+}
+
+#button-menu > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Utilities */
+
+.button {
+  text-decoration: none;
+  color: var(--white);
+  border: 3px solid var(--white);
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin: 0 2rem;
+}
