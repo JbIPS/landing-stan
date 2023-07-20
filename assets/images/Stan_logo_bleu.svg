@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Calque_1"
+   viewBox="0 0 135.79178 37.24"
+   version="1.1"
+   sodipodi:docname="Stan_logo_bleu.svg"
+   width="135.79178"
+   height="37.240002"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview23"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <defs
+     id="defs7">
+    <style
+       id="style2">.cls-1,.cls-2{fill:none;}.cls-3{fill:#000061;}.cls-4{fill:#063dd0;}.cls-2{clip-path:url(#clippath);}</style>
+    <clipPath
+       id="clippath">
+      <rect
+         class="cls-1"
+         x="5.8099999"
+         y="7.25"
+         width="136"
+         height="37.240002"
+         id="rect4" />
+    </clipPath>
+  </defs>
+  <g
+     id="Groupe_2989"
+     transform="translate(-6.0182228,-7.25)">
+    <g
+       id="Groupe_2886">
+      <g
+         class="cls-2"
+         clip-path="url(#clippath)"
+         id="g18">
+        <g
+           id="Groupe_2885">
+          <path
+             id="Tracé_1505"
+             class="cls-3"
+             d="m 141.81,44.49 h -8.6 v -17.8 c 0,-5.44 -4.41,-9.85 -9.85,-9.85 -5.44,0 -9.85,4.41 -9.85,9.85 v 4.3 h -8.6 v -4.3 C 104.76,16.5 112.9,8.12 123.09,7.97 c 10.19,-0.15 18.57,7.99 18.72,18.18 0,0.18 0,0.36 0,0.54 z" />
+          <rect
+             id="Rectangle_261"
+             class="cls-4"
+             x="104.9"
+             y="7.3299999"
+             width="8.6000004"
+             height="37.16" />
+          <path
+             id="Tracé_1506"
+             class="cls-3"
+             d="m 14.41,18.67 c 0,1.55 1.26,2.81 2.82,2.82 h 0.02 v 8.6 H 17.23 C 10.92,29.97 5.91,24.76 6.02,18.46 6.13,12.32 11.09,7.37 17.23,7.25 h 15.79 v 8.6 H 17.23 c -1.56,0 -2.82,1.26 -2.82,2.82" />
+          <path
+             id="Tracé_1507"
+             class="cls-4"
+             d="m 33.36,32.89 c 0,6.31 -5.11,11.42 -11.42,11.42 H 6.15 v -8.6 h 15.79 c 1.55,0 2.81,-1.26 2.82,-2.81 0,0 0,0 0,0 0,-1.51 -1.2,-2.74 -2.71,-2.78 v -8.63 c 6.26,0.06 11.3,5.14 11.31,11.4" />
+          <rect
+             id="Rectangle_262"
+             class="cls-3"
+             x="45.73"
+             y="7.79"
+             width="8.6000004"
+             height="36.630001" />
+          <path
+             id="Tracé_1508"
+             class="cls-4"
+             d="m 80.7,44.31 c -10.02,0 -18.14,-8.12 -18.14,-18.14 0,-10.02 8.12,-18.14 18.14,-18.14 10.02,0 18.14,8.12 18.14,18.14 v 0 C 98.83,36.19 90.71,44.3 80.7,44.31 m 0,-27.68 c -5.27,0 -9.54,4.27 -9.54,9.54 0,5.27 4.27,9.54 9.54,9.54 5.27,0 9.54,-4.27 9.54,-9.54 v 0 c 0,-5.27 -4.27,-9.53 -9.54,-9.54" />
+          <rect
+             id="Rectangle_263"
+             class="cls-4"
+             x="38.02"
+             y="7.27"
+             width="24.01"
+             height="8.6000004" />
+          <rect
+             id="Rectangle_264"
+             class="cls-3"
+             x="90.239998"
+             y="7.3299999"
+             width="8.6000004"
+             height="37.09" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

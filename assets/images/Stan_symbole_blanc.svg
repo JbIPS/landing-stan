@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Calque_1"
+   viewBox="0 0 28.900501 39.029999"
+   version="1.1"
+   sodipodi:docname="Stan_symbole_blanc.svg"
+   width="28.900501"
+   height="39.029999"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="15.318386"
+     inkscape:cx="14.459748"
+     inkscape:cy="19.519028"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Calque_1" />
+  <defs
+     id="defs7">
+    <style
+       id="style2">.cls-1,.cls-2{fill:none;}.cls-3{fill:#fff;}.cls-2{clip-path:url(#clippath);}</style>
+    <clipPath
+       id="clippath">
+      <rect
+         class="cls-1"
+         x="9.1899996"
+         y="8.3500004"
+         width="29.02"
+         height="39.040001"
+         id="rect4" />
+    </clipPath>
+  </defs>
+  <g
+     class="cls-2"
+     clip-path="url(#clippath)"
+     id="g12"
+     transform="translate(-9.3094993,-8.36)">
+    <g
+       id="Groupe_2923">
+      <path
+         id="Tracé_1531"
+         class="cls-3"
+         d="m 18.26,20.39 c 0,1.64 1.33,2.96 2.97,2.97 h 0.02 v 9.06 H 21.23 C 14.59,32.36 9.25,26.92 9.31,20.28 9.37,13.72 14.67,8.42 21.23,8.36 h 16.63 v 9.06 H 21.23 c -1.64,0 -2.96,1.33 -2.97,2.97" />
+      <path
+         id="Tracé_1532"
+         class="cls-3"
+         d="m 38.22,35.36 c 0,6.64 -5.39,12.03 -12.03,12.03 H 9.56 v -9.06 h 16.63 c 1.64,0 2.97,-1.32 2.97,-2.96 0,0 0,0 0,0 0,-1.59 -1.27,-2.88 -2.85,-2.92 v -9.09 c 6.59,0.07 11.9,5.42 11.91,12.01" />
+    </g>
+  </g>
+</svg>
