@@ -42,7 +42,7 @@ const route = useRoute()
     </div>
   </main>
   <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2">
-      <img src="/assets/images/MOBILE/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/6 pe-2">
+      <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/6 pe-2">
       <div class="flex w-1/6 border-s-2 justify-around h-6 items-center">
         <a href=""><img src="/assets/images/logo_linkedin.svg" alt="Logo LinkedIn"></a>
         <a href=""><img src="/assets/images/logo_twitter.svg" alt="Logo Twitter"></a>

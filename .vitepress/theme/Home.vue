@@ -81,7 +81,7 @@
       <ButtonComponent href="/a_propos" text="Découvrez leur parcours" class="mt-8 mb-32"/>
     </div>
     <img src="/assets/images/Duo-casual.jpg" alt="Photo des deux fondateurs" class="w-11/12">
-    <img src="/assets/images/MOBILE/line_uturn.svg" alt="" class="w-3/5 absolute -bottom-8 right-0">
+    <img src="/assets/images/line_uturn.svg" alt="" class="w-3/5 absolute -bottom-8 right-0">
   </section>
   <section class="flex flex-col px-8 justify-around items-center pt-4">
     <SectionTitleComponent title="Nos clients (anonymes) le disent" shadow="Témoignages" dark class="w-full"/>
@@ -92,7 +92,7 @@
       <p class="my-4">« Travailler avec l’équipe Stan nous a permis d’automatiser nos outils sur nos offres standards dans un délai très court.»</p>
       <button type="button" aria-role="suivant" class="border-2 rounded-full border-blue-dark w-8 h-8 text-4xl leading-4 font-extrabold">›</button>
     </div>
-    <img src="/assets/images/MOBILE/line_vertical_up.svg" class="w-full h-20 -mt-2" alt="">
+    <img src="/assets/images/line_vertical_up.svg" class="w-full h-20 -mt-2" alt="">
   </section>
   <section class="bg-blue flex flex-col px-8 pb-8 justify-around">
     <SectionTitleComponent title="Contactez-nous" shadow="Contact" id="contact"/>
@@ -120,7 +120,7 @@ defineProps<{
 }
 
 .offers {
-  background-image: url(/assets/images/MOBILE/line_vertical.svg);
+  background-image: url(/assets/images/line_down.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   padding-bottom: 3rem;
@@ -131,7 +131,7 @@ defineProps<{
 }
 
 form > input[type="email"] {
-  background-image: url(/assets/images/MOBILE/line_horizontal_right.svg);
+  background-image: url(/assets/images/line_horizontal_right.svg);
   background-repeat: no-repeat;
   background-position-x: -3.2rem;
   background-position-y: center;
@@ -139,7 +139,7 @@ form > input[type="email"] {
 }
 
 form > textarea {
-  background-image: url(/assets/images/MOBILE/line_horizontal_left.svg);
+  background-image: url(/assets/images/line_horizontal_left.svg);
   background-repeat: no-repeat;
   background-position-x: 120%;
   background-position-y: center;

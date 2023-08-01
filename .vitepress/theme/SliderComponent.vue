@@ -15,7 +15,8 @@
 <script setup lang="ts">
 import {onMounted} from 'vue'
 
-import Glide from '@glidejs/glide'
+import '@glidejs/glide/dist/css/glide.core.min.css'
+import Glide from '@glidejs/glide/dist/glide.modular.esm'
 
 onMounted(() => new Glide('.glide', {
   gap: 0,
@@ -24,8 +25,6 @@ onMounted(() => new Glide('.glide', {
 }).mount())
 </script>
 <style>
-@import 'node_modules/@glidejs/glide/dist/css/glide.core.min.css';
-
 .glide__bullets {
   display: flex;
   justify-content: center; 
