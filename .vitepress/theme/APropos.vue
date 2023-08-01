@@ -95,28 +95,28 @@
         <p><strong>SecNumCloud</strong> : Cette certification de l’ANSSI atteste de notre effort pour la sécurité de notre système, des systèmes de défense numérique à la formation de nos employés en passant par une sélection rigoureuse lors de l’embauche ou le choix de prestataires.</p>
       </div>
     </div>
-    <h3>NOS ENGAGEMENTS</h3>
-    <div>
-      <div>
-        <div class="img-container">
-          <img src="/assets/images/ginum.jpg" alt="Logo du groupement GINUM">
-        </div>
-        <p><strong>Ginum</strong> accompagne l’écosystème du numérique français afin de relever ensemble les défis qui s’annoncent pour la Défense, la Sécurité et les enjeux d’importance vitale.</p>
-      </div>
-      <div>
-        <div class="img-container">
-          <img src="/assets/images/fntc.jpg" alt="Logo de la fédération Fntc">
-        </div>
-        <p><strong>Fntc</strong> rassemble éditeurs de logiciels, prestataires de services, experts, professionnels réglementés, start-up, acteurs internationaux, utilisateurs et structures institutionnelles. pour une digitalisation fiable et sécurisée.</p>
-      </div>
-    </div>
+    <!-- <h3>NOS ENGAGEMENTS</h3> -->
+    <!-- <div> -->
+    <!--   <div> -->
+    <!--     <div class="img-container"> -->
+    <!--       <img src="/assets/images/ginum.jpg" alt="Logo du groupement GINUM"> -->
+    <!--     </div> -->
+    <!--     <p><strong>Ginum</strong> accompagne l’écosystème du numérique français afin de relever ensemble les défis qui s’annoncent pour la Défense, la Sécurité et les enjeux d’importance vitale.</p> -->
+    <!--   </div> -->
+    <!--   <div> -->
+    <!--     <div class="img-container"> -->
+    <!--       <img src="/assets/images/fntc.jpg" alt="Logo de la fédération Fntc"> -->
+    <!--     </div> -->
+    <!--     <p><strong>Fntc</strong> rassemble éditeurs de logiciels, prestataires de services, experts, professionnels réglementés, start-up, acteurs internationaux, utilisateurs et structures institutionnelles. pour une digitalisation fiable et sécurisée.</p> -->
+    <!--   </div> -->
+    <!-- </div> -->
   </section>
   <section class="bg-blue px-8 pb-48">
     <SectionTitleComponent title="la belle équipe" shadow="équipe"/>
     <div>
       <img src="/assets/images/portrait_jb.jpg" alt="Portrait de Jean-Baptiste Richardet, cofondateur de Stan">
-      <h3 class="text-blue-light">JEAN-BAPTISTE RICHARDET</h3>
-      <TabbarComponent :tabs="tabs.jb" id="jb" dark>
+      <h3 class="text-center text-lg font-extrabold my-6 text-blue-light">JEAN-BAPTISTE RICHARDET</h3>
+      <TabbarComponent :tabs="tabs.jb" id="jb" color="white" text-color="white">
         <template #parcours_jb>
           <p>Jean-Baptiste est ingénieur en informatique, avec une spécialisation Intelligence Artificielle depuis plus de 10 ans.</p>
           <p>Passionné par la Data Science et le développement logiciel, il a eu l’opportunité de contribuer aux défis, tantôt dans de grandes entreprises comme Thalès ou TF1, tantôt dans des start-ups aux grandes ambitions. Il décide en 2019 de rejoindre Jérémy pour fonder Cameo, un organisme de formation qui propose les formations qu’ils auraient aimé avoir lors de leurs carrières. Sa mission ? Gérer l’intégralité des démarches administratives automatiquement pour permettre aux formateurs de ne garder que ce qu’ils font le mieux : créer et animer des formations. C’est à ce moment que Stan est né !</p>
@@ -139,7 +139,7 @@
     <div>
       <img src="/assets/images/portrait_jeremy.jpg" alt="Portrait de Jérémy Marlin, cofondateur de Stan">
       <h3 class="text-blue-dark">JÉRÉMY MARLIN</h3>
-      <TabbarComponent :tabs="tabs.jeremy" id="jeremy">
+      <TabbarComponent :tabs="tabs.jeremy" id="jeremy" color="blue" text-color="blue">
         <template #parcours_jeremy>
           <p>Jérémy a baigné plus de 10 ans dans le domaine de la protection sociale sur des activités de conseil et des sujets de développement commercial.</p>
           <p>Il a fait le grand saut dans l’entrepreneuriat il y a près de 6 ans avec la création d’une startup dans la formation professionnelle : <a href="https://cameo.fr/">Cameo</a>. Cette structure vise à développer les compétences entrepreneuriales et de gestion de projets par des formats expérimentaux d’un nouveau genre :  l’immersion en startups. Un projet qui a permis de générer +20 millions de CA et de générer + 50% de mobilités internes chez les clients de Cameo (vs 5% au niveau national).</p>

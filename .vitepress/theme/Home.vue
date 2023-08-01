@@ -41,14 +41,14 @@
   </section>
   <section class="bg-white pt-8 px-8 flex flex-col items-center border-b-2 border-blue-dark mb-4">
     <SectionTitleComponent title="découvrez nos offres" shadow="offres" class="mb-6" dark>
-      <img class="w-2/4" src="/assets/images/MOBILE/Stan_logo_bleu.svg" alt="Stan">
+      <img class="w-2/4" src="/assets/images/Stan_logo_bleu.svg" alt="Stan">
     </SectionTitleComponent>
     <div class="offers">
       <OfferBlockComponent img="/assets/images/audit.svg" title="audit" subtitle="Phase d'étude" text="Audit de l'existant et construction d'un plan stratégique" class="border-red"/>
       <OfferBlockComponent img="/assets/images/poc.svg" title="poc" subtitle="Phase de validation" text="Test et mise en place d'une première version Stan" class="border-blue"/>
       <OfferBlockComponent img="/assets/images/industrialisation.svg" title="industrialisation" subtitle="Phase de production" text="Élargissement du périmètre de la solution Stan" class="border-blue-light"/>
     </div>
-    <ButtonComponent href="#" text="En savoir plus" class="text-blue-dark my-8"/>
+    <ButtonComponent href="/accompagnement" text="En savoir plus" class="text-blue-dark my-8"/>
   </section>
   <section class="bg-blue px-8 flex flex-col justify-around items-center">
     <SectionTitleComponent title="Une startup made in france" shadow="france"/>
@@ -78,7 +78,7 @@
       <SectionTitleComponent title="Un duo d'experts à votre service" shadow="experts" dark/>
       <p class="font-extrabold text-xl my-10"><strong>Stan, c’est la réunion de deux entrepreneurs, aux multi expertises.</strong></p>
       <p>Après une première aventure entrepreneuriale réussie dans la formation, <strong>le duo retrousse à nouveau ses manches pour participer à la création de valeurs dans l’économie du numérique français.</strong> L’un est incollable en data sciences, l’autre en intelligence économique. Les deux sont passionnés par les enjeux de la cybersécurité et de souveraineté. Un duo plein de ressources !</p>
-      <ButtonComponent href="#" text="Découvrez leur parcours" class="mt-8 mb-32"/>
+      <ButtonComponent href="/a_propos" text="Découvrez leur parcours" class="mt-8 mb-32"/>
     </div>
     <img src="/assets/images/Duo-casual.jpg" alt="Photo des deux fondateurs" class="w-11/12">
     <img src="/assets/images/MOBILE/line_uturn.svg" alt="" class="w-3/5 absolute -bottom-8 right-0">

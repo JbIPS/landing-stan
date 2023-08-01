@@ -3,15 +3,15 @@ module.exports = {
   content: ["./.vitepress/theme/*.{vue,ts}"],
   theme: {
     colors: {
-      white: "#fff",
-      dark: "#003caa",
-      red: "#ff6668",
+      white: "rgb(var(--white) / <alpha-value>)",
+      dark: "rgb(var(--dark) / <alpha-value>)",
+      red: "rgb(var(--red) / <alpha-value>)",
       blue: {
-        light: "#19dee0",
-        DEFAULT: "#062dd0",
-        dark: "#000061",
+        light: "rgb(var(--blue-light) / <alpha-value>)",
+        DEFAULT: "rgb(var(--blue) / <alpha-value>)",
+        dark: "rgb(var(--blue-dark) / <alpha-value>)",
       },
-      grey: "#000029",
+      grey: "rgb(var(--grey) / 0.29)",
     },
     opacity: {
       15: ".15",

@@ -1,72 +1,54 @@
 <script setup lang="ts">
-import { useData } from "vitepress";
+import { useData, useRoute } from "vitepress";
+import Home from './Home.vue';
+import APropos from './APropos.vue'
+import Offre from "./Offre.vue";
 
 // https://vitepress.dev/reference/runtime-api#usedata
-const { site, frontmatter } = useData();
+const { site } = useData<{
+  title: string
+  description: string
+}>();
+const route = useRoute()
+  
 </script>
 
 <template>
-  <nav class="py-2 me-6">
+  <nav :class="`py-2 pe-6 flex ${route.path === '/' ? 'justify-end' : 'justify-between'}`">
+    <a v-if="route.path !== '/'" href="/"><img src="/assets/images/Stan_symbole_blanc.svg" alt="Logo Stan blanc" class="ms-4 w-7"></a>
     <button role="menu" id="button-menu">
       <img
-        src="/assets/images/MOBILE/Siteweb_Stan_elements_M_menu-blanc.svg"
+        src="/assets/images/MOBILE/menu_open.svg"
         alt="Ouvrir le menu"
       />
     </button>
   </nav>
-  <div v-if="frontmatter.home">
-    <section id="title" class="flex flex-col">
-      <div class="grow justify-center">
-        <h1>
-          <img
-            class="pure-img"
-            src="/assets/images/PNG/STAN_Logo-Blanc.png"
-            alt="{{site.title}}"
-          />
-        </h1>
-      </div>
-      <div class="px-16 text-2xl font-extrabold">
-        <h2>{{ site.description }}</h2>
-      </div>
-      <div class="flex-col px-8 grow justify-around">
-        <p>
-          Nous <span class="text-white font-bold">démêlons</span> -
-          <span class="text-red font-bold">facilitions</span> -
-          <span class="text-blue-light font-bold">revalorisons</span> vos données grâce à un outil de
-          confiance et souverain pour vous aider à créer de la valeur au sein de
-          votre entreprise.
-        </p>
-        <a href="#contact" class="button"
-          >Prendre rendez-vous pour une démonstration</a
-        >
-      </div>
-      <div class="justify-center">
-        <a href="#"><img class="h-10 mt-12" src="/assets/images/MOBILE/Siteweb_Stan_elements_M_HOMEPAGE_fleche-bleue.svg"></a>
-      </div>
-    </section>
-    <section class="text-left">
-      <div class="text-blue-dark opacity-15 text-7xl font-extrabold translate-y-9 -z-10 relative px-8" aria-hidden="true">ALERTE</div>
-      <h2 class="text-4xl font-extrabold mb-6 px-8">ALERTE AUX DONNÉES MAL TRAITÉES</h2>
-      <p class="my-6 px-8 -mb-6">Au sein de vos entreprises, une denrée précieuse circule, se perd, dépérit, n’est pas protégée. Ce sont vos données ! Et pourtant elles représentent une partie importante de votre activité et peuvent être une nouvelle ressource économique !</p>
-      <div class="bg-white p-8 text-blue-dark font-bold text-center me-8 translate-y-14 relative z-20">
-        <p class="text-2xl mb-6">Les données représentent jusqu’à 15.5% du PIB mondial*</p>
-        <p class="text-xs">*RAPPORT L’ÉCONOMIE NUMÉRIQUE 2019 de L’ONU</p>
-      </div>
-      <div class="bg-blue-dark ms-8 p-8 pt-16 relative translate-y-7 z-10">
-        <p class="text-xl"><strong class="font-extrabold">Et oui, vos données aussi méritent le meilleur et pourtant elles sont souvent malmenées, mal traitées voire maltraitées !</strong></p>
-        <p class="my-6">La maltraitance, (d’une donnée chez Stan !) c’est mettre une donnée en situation de vulnérabilité lorsqu’une action ou un défaut d’action compromet ou porte atteinte à son développement, à ses droits, à ses besoins fondamentaux ou à sa santé et que cette atteinte intervient dans une relation de confiance, de dépendance, de soin ou d’accompagnement. Les situations de maltraitance (oui on parle toujours de la donnée !) peuvent être ponctuelles ou durables, intentionnelles ou non. Leur origine peut être individuelle, collective ou institutionnelle.</p>
-        <p class="text-xl font-extrabold text-blue-light">Vos données méritent d’être mieux traitées, mieux gérées, mieux protégées, et mieux exploitées !</p>
-      </div>
-    </section>
-    <section class="bg-white">
-      <h2>DÉCOUVREZ NOS OFFRES</h2>
-        <p class="text-xl"><strong class="font-extrabold">Et oui, vos données aussi méritent le meilleur et pourtant elles sont souvent malmenées, mal traitées voire maltraitées !</strong></p>
-        <p class="my-6">La maltraitance, (d’une donnée chez Stan !) c’est mettre une donnée en situation de vulnérabilité lorsqu’une action ou un défaut d’action compromet ou porte atteinte à son développement, à ses droits, à ses besoins fondamentaux ou à sa santé et que cette atteinte intervient dans une relation de confiance, de dépendance, de soin ou d’accompagnement. Les situations de maltraitance (oui on parle toujours de la donnée !) peuvent être ponctuelles ou durables, intentionnelles ou non. Leur origine peut être individuelle, collective ou institutionnelle.</p>
-        <p class="text-xl font-extrabold text-blue-light">Vos données méritent d’être mieux traitées, mieux gérées, mieux protégées, et mieux exploitées !</p>
-    </section>
+  <div v-if="route.path === '/'">
+    <Home :description="site.description" :title="site.title"/>
+  </div>
+  <div v-else-if="route.path === '/a_propos'">
+    <APropos />
+  </div>
+  <div v-else-if="route.path === '/accompagnement'">
+    <Offre/>
   </div>
   <div v-else>
     <a href="/">Home</a>
     <Content />
   </div>
+  <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2">
+      <img src="/assets/images/MOBILE/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/6 pe-2">
+      <div class="flex w-1/6 border-s-2 justify-around h-6 items-center">
+        <a href=""><img src="/assets/images/logo_linkedin.svg" alt="Logo LinkedIn"></a>
+        <a href=""><img src="/assets/images/logo_twitter.svg" alt="Logo Twitter"></a>
+        <a href=""><img src="/assets/images/logo_youtube.svg" alt="Logo YouTube"></a>
+      </div>
+      <div class="w-1/5 border-s-2 border-e-2 text-center h-6">
+        <a href="/mentions_legales">Mentions légales</a>
+        <a href="/cgv">CGV</a>
+      </div>
+    <p class="w-1/3 text-[8px] text-center ps-2">Pas de cookies sur notre site. La meilleure façon de protéger vos données, c’est de ne pas les garder.</p>
+  </footer>
 </template>
+<style scoped>
+</style>

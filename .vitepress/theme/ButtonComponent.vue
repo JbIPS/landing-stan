@@ -1,5 +1,5 @@
 <template>
-  <a :href="href" class="button">{{ text }}</a>
+  <a :href="href">{{ text }}</a>
 </template>
 <script setup lang="ts">
 defineProps<{
@@ -14,5 +14,6 @@ a {
   font-weight: 900;
   text-transform: uppercase;
   padding: 0.5rem;
+  text-align: center;
 }
 </style>

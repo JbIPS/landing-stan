@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
-    <img :src="img" alt="" class="w-1/3">
-    <h3 class="text-extrabold text-xl">{{ title.toUpperCase() }}</h3>
+    <img :src="img" alt="" class="w-1/5 my-4">
+    <h3 class="font-extrabold text-xl">{{ title.toUpperCase() }}</h3>
     <h4 class="italic text-xl">{{ subtitle }}</h4>
     <p class="text-center px-4 my-4">{{ text }}</p>
   </div>
