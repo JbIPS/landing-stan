@@ -1,6 +1,6 @@
 <template>
   <section class="text-blue-dark flex flex-col items-center pb-8">
-    <SectionTitleComponent title="vision" shadow="vision" dark class="text-center"/>
+    <SectionTitleComponent title="vision" shadow="vision" dark class="text-center" id="vision"/>
     <p class="text-center italic mt-12">Notre rôle chez</p>
     <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/3 mt-4">
     <img src="/assets/images/line_fork.svg" alt="Logo Stan" class="w-9/12 mt-4">
@@ -43,7 +43,7 @@
     <p class="text-blue-dark">Devenir la référence en matière de gestion sécurisée de la donnée, d’abord sur le marché de l’assurance. Puis dans la santé, pour aller ensuite dans tous les secteurs manipulant de la donnée.</p>
   </section>
   <section class="px-8 pb-6 bg-blue">
-    <SectionTitleComponent title="une solution made in france" shadow="france"/>
+    <SectionTitleComponent title="une solution made in france" shadow="france" id="souverainete"/>
     <h3 class="font-extrabold my-6 text-2xl">NOTRE SOUVERAINETÉ NUMÉRIQUE</h3>
     <p><strong>La souveraineté numérique</strong>, c’est la capacité à maîtriser l’ensemble des technologies, tant d’un point de vue économique que social et politique. Autrement dit, la capacité de maîtrise, <strong>d’autonomieet d’indépendance</strong>.<br/>
       Le numérique, et surtout les données personnelles des internautes, est devenu le nouveau terrain d’affrontement des grandes puissances mondiales.</p>
@@ -112,11 +112,11 @@
     <!-- </div> -->
   </section>
   <section class="bg-blue px-8 pb-48">
-    <SectionTitleComponent title="la belle équipe" shadow="équipe"/>
+    <SectionTitleComponent title="la belle équipe" shadow="équipe" id="equipe"/>
     <div>
       <img src="/assets/images/portrait_jb.jpg" alt="Portrait de Jean-Baptiste Richardet, cofondateur de Stan">
       <h3 class="text-center text-lg font-extrabold my-6 text-blue-light">JEAN-BAPTISTE RICHARDET</h3>
-      <TabbarComponent :tabs="tabs.jb" id="jb" color="white" text-color="white">
+      <TabbarComponent :tabs="tabs.jb" id="jb" color="blue" text-color="white" class="text-[.65rem]">
         <template #parcours_jb>
           <p>Jean-Baptiste est ingénieur en informatique, avec une spécialisation Intelligence Artificielle depuis plus de 10 ans.</p>
           <p>Passionné par la Data Science et le développement logiciel, il a eu l’opportunité de contribuer aux défis, tantôt dans de grandes entreprises comme Thalès ou TF1, tantôt dans des start-ups aux grandes ambitions. Il décide en 2019 de rejoindre Jérémy pour fonder Cameo, un organisme de formation qui propose les formations qu’ils auraient aimé avoir lors de leurs carrières. Sa mission ? Gérer l’intégralité des démarches administratives automatiquement pour permettre aux formateurs de ne garder que ce qu’ils font le mieux : créer et animer des formations. C’est à ce moment que Stan est né !</p>
@@ -139,7 +139,7 @@
     <div>
       <img src="/assets/images/portrait_jeremy.jpg" alt="Portrait de Jérémy Marlin, cofondateur de Stan">
       <h3 class="text-blue-dark">JÉRÉMY MARLIN</h3>
-      <TabbarComponent :tabs="tabs.jeremy" id="jeremy" color="blue" text-color="blue">
+      <TabbarComponent :tabs="tabs.jeremy" id="jeremy" color="white" text-color="blue" class="text-[.65rem]">
         <template #parcours_jeremy>
           <p>Jérémy a baigné plus de 10 ans dans le domaine de la protection sociale sur des activités de conseil et des sujets de développement commercial.</p>
           <p>Il a fait le grand saut dans l’entrepreneuriat il y a près de 6 ans avec la création d’une startup dans la formation professionnelle : <a href="https://cameo.fr/">Cameo</a>. Cette structure vise à développer les compétences entrepreneuriales et de gestion de projets par des formats expérimentaux d’un nouveau genre :  l’immersion en startups. Un projet qui a permis de générer +20 millions de CA et de générer + 50% de mobilités internes chez les clients de Cameo (vs 5% au niveau national).</p>
@@ -160,7 +160,7 @@
     </div>
   </section>
   <section class="px-8 -mb-36 relative z-10">
-    <h2 class="mt-4 mb-8 text-center text-blue-dark text-2xl font-extrabold">NOS VALEURS</h2>
+    <h2 class="mt-4 mb-8 text-center text-blue-dark text-2xl font-extrabold" id="valeurs">NOS VALEURS</h2>
     <OfferBlockComponent img="/assets/images/ensemble.svg" title="réussir ensemble" subtitle="Partage & transmission" text="Chez Stan, au-delà de vous proposer une solution, nous aimons partager nos analyses et expliquer notre raisonnement, nos solutions. Nous sommes persuadés que comprendre et partager est un facteur de réussite collective. Donc nos équipes sont pédagogues, à l’écoutes et patients." class="border-red"/>
     <OfferBlockComponent img="/assets/images/transparence.svg" title="de la transparence" subtitle="Intelligence artificielle" text="L’innovation est un réel état d’esprit pour nos fondateurs. Nous comptons continuer de proposer à nos clients le meilleur de la science informatique. L’intelligence artificielle est un outil qu’on aime challenger, améliorer, voir évoluer. Au cœur de nos métiers, nous participons à son façonnage pour plus de performance, précision, protection." class="border-blue"/>
     <OfferBlockComponent img="/assets/images/confiance.svg" title="Avancer en confiance" subtitle="transparence & sécurité" text="La confiance n’est pas un dû mais se mérite et nous en sommes conscients. Nous travaillons dans la transparence, tout en maintenant notre politique de confidentialité et de sécurité. Nos partenaires et collaborateurs sont sélectionnés dans le même état d’esprit. C’est l’alliance transparence et sécurité qui fait notre force." class="border-blue-light"/>
@@ -183,7 +183,7 @@
         <li> Des prix justes, au résultat.</li>
       </ul>
     </div>
-    <ButtonComponent text="prendre rendez-vous pour une démonstration" class="mt-8 mb-10 w-3/5 text-sm self-center"/>
+    <ButtonComponent text="prendre rendez-vous pour une démonstration" class="mt-8 mb-10 w-3/5 text-sm self-center" href="/#contact"/>
   </section>
 </template>
 <script setup lang="ts">

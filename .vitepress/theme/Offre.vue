@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="px-2 flex flex-col items-center" id="top">
-      <SectionTitleComponent title="stan répond à vos besoins" shadow="besoin" dark class="text-center mb-6 px-6"/>
+      <SectionTitleComponent title="stan répond à vos besoins" shadow="besoin" class="text-center mb-6 px-6" dark id="besoins"/>
       <div class="flex flex-wrap justify-center">
         <div class="w-2/4 text-blue-dark flex flex-col items-center">
           <img src="/assets/images/optimiser.svg" alt="" class="max-w-[50px] my-1">
@@ -86,7 +86,7 @@
       <img src="/assets/images/duo-working.png" alt="Jérémy Marlin et Jean-Baptiste Richardet en train d'optimiser un processus Stan" class="w-full">
     </section>
     <section class="flex flex-col items-center px-8 text-blue-dark">
-      <SectionTitleComponent title="notre offre" shadow="offre" dark/>
+      <SectionTitleComponent title="notre offre" shadow="offre" dark id="offres"/>
       <OfferBlockComponent title="audit" subtitle="Phase d'étude" img="/assets/images/audit.svg" class="border-red w-full mt-10" text=""/>
       <img class="h-6 my-2" src="/assets/images/scroll_arrow_homepage.svg">
       <h2 class="text-2xl font-extrabold">AUDIT</h2>
@@ -163,7 +163,7 @@
       <ButtonComponent href="/#contact" text="Prendre rendez-vous pour une démonstration" class="my-8 w-3/4"/>
     </section>
     <section class="bg-blue">
-      <SectionTitleComponent title="cas d'usage" shadow="cas d'usage" class="mb-8 px-8"/>
+      <SectionTitleComponent title="cas d'usage" shadow="cas d'usage" class="mb-8 px-8" id="cas_usage"/>
       <SliderComponent class="bg-white">
         <template #0>
           <h2 class="px-8 text-2xl font-extrabold pb-6 bg-blue">INDUSTRIALISATION DES SORTIES DE CONTRATS COLLECTIFS : LOI EVIN, ANI ET AUTRES CONTRATS INDIVIDUELS</h2>

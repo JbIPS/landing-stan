@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390.433" height="1030.618" viewBox="0 0 390.433 1030.618">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_317" data-name="Rectangle 317" width="390.433" height="1030.618" fill="none" stroke="#707070" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_3032" data-name="Groupe 3032" clip-path="url(#clip-path)">
+    <path id="Tracé_1641" data-name="Tracé 1641" d="M175.437,852.861a16.941,16.941,0,0,1-33.882,0L141.542,0" transform="translate(-87.98 0.001)" fill="none" stroke="#003caa" stroke-width="2"/>
+    <path id="Tracé_1642" data-name="Tracé 1642" d="M371.255,2098.35a16.941,16.941,0,1,1,33.882,0v225.836" transform="translate(-230.765 -1293.763)" fill="none" stroke="#003caa" stroke-width="2"/>
+    <path id="Tracé_1643" data-name="Tracé 1643" d="M232.967,2013.241a69.272,69.272,0,0,1,138.544,0v225.71" transform="translate(-144.808 -1208.333)" fill="none" stroke="#003caa" stroke-width="2"/>
+    <line id="Ligne_79" data-name="Ligne 79" x1="120.81" transform="translate(53.562 804.587)" fill="none" stroke="#003caa" stroke-width="2"/>
+    <line id="Ligne_80" data-name="Ligne 80" x1="120.81" transform="translate(53.562 853.322)" fill="none" stroke="#003caa" stroke-width="2"/>
+    <path id="Tracé_1644" data-name="Tracé 1644" d="M140.472,853.621a69.272,69.272,0,0,1-138.544,0V0" transform="translate(-1.198 0.001)" fill="none" stroke="#003caa" stroke-width="2"/>
+    <line id="Ligne_83" data-name="Ligne 83" x1="153.171" transform="translate(227.433 804.587)" fill="none" stroke="#003caa" stroke-width="2"/>
+    <path id="Tracé_1645" data-name="Tracé 1645" d="M152.712,0H0" transform="translate(227.433 853.322)" fill="none" stroke="#003caa" stroke-width="2"/>
+  </g>
+</svg>

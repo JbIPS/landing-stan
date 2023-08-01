@@ -3,6 +3,7 @@ import { useData, useRoute } from "vitepress";
 import Home from './Home.vue';
 import APropos from './APropos.vue'
 import Offre from "./Offre.vue";
+import MenuComponent from "./MenuComponent.vue";
 
 // https://vitepress.dev/reference/runtime-api#usedata
 const { site } = useData<{
@@ -16,26 +17,30 @@ const route = useRoute()
 <template>
   <nav :class="`py-2 pe-6 flex ${route.path === '/' ? 'justify-end' : 'justify-between'}`">
     <a v-if="route.path !== '/'" href="/"><img src="/assets/images/Stan_symbole_blanc.svg" alt="Logo Stan blanc" class="ms-4 w-7"></a>
-    <button role="menu" id="button-menu">
+    <input type="checkbox" id="menu_toggle" class="hidden">
+    <MenuComponent />
+    <label for="menu_toggle" class="w-10 cursor-pointer">
       <img
-        src="/assets/images/MOBILE/menu_open.svg"
+        src="/assets/images/menu_open.svg"
         alt="Ouvrir le menu"
       />
-    </button>
+    </label>
   </nav>
-  <div v-if="route.path === '/'">
-    <Home :description="site.description" :title="site.title"/>
-  </div>
-  <div v-else-if="route.path === '/a_propos'">
-    <APropos />
-  </div>
-  <div v-else-if="route.path === '/accompagnement'">
-    <Offre/>
-  </div>
-  <div v-else>
-    <a href="/">Home</a>
-    <Content />
-  </div>
+  <main>
+    <div v-if="route.path === '/'">
+      <Home :description="site.description" :title="site.title"/>
+    </div>
+    <div v-else-if="route.path === '/a_propos'">
+      <APropos />
+    </div>
+    <div v-else-if="route.path === '/accompagnement'">
+      <Offre/>
+    </div>
+    <div v-else>
+      <a href="/">Home</a>
+      <Content />
+    </div>
+  </main>
   <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2">
       <img src="/assets/images/MOBILE/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/6 pe-2">
       <div class="flex w-1/6 border-s-2 justify-around h-6 items-center">

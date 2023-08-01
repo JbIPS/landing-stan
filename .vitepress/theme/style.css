@@ -9,6 +9,12 @@
 
 @font-face {
   font-family: "Urbanist";
+  src: url("/assets/fonts/Urbanist-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Urbanist";
   src: url("/assets/fonts/Urbanist-Bold.woff2") format("woff2");
   font-weight: 700;
 }

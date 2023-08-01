@@ -95,7 +95,7 @@
     <img src="/assets/images/MOBILE/line_vertical_up.svg" class="w-full h-20 -mt-2" alt="">
   </section>
   <section class="bg-blue flex flex-col px-8 pb-8 justify-around">
-    <SectionTitleComponent title="Contactez-nous" shadow="Contact" />
+    <SectionTitleComponent title="Contactez-nous" shadow="Contact" id="contact"/>
     <form class="flex flex-col justify-around w-full mt-10 text-blue-dark">
       <input type="email" placeholder="Email" class="p-4 text-blue-dark" required>
       <textarea placeholder="Votre message..." class="my-6 p-4" rows="4" required></textarea>

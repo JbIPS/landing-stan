@@ -3,7 +3,7 @@
     <div class="flex mb-6 justify-center">
       <div v-for="tab in tabs" :key="tab.id" class="flex-grow">
         <input type="radio" :name="`navtab_${id}`" :id="`${id}_${tab.id}`" class="hidden" :value="tab" v-model="currentTab">
-        <label :for="`${id}_${tab.id}`">{{ tab.label }}</label>
+        <label :for="`${id}_${tab.id}`" class="text-center">{{ tab.label }}</label>
       </div>
     </div>
     <div :class="`text-${textColor}`">
@@ -29,7 +29,7 @@ const currentTab = ref(props.tabs[0])
 .blue input + label {
   background: rgb(var(--blue));
   color: rgb(var(--white));
-  border-color: rgb(var(--blue));
+  border-color: rgb(var(--white));
 }
 .blue input:checked + label {
   background: rgb(var(--white));
@@ -84,12 +84,14 @@ label {
   border: 1px solid;
   font-weight: 900;
   text-transform: uppercase;
-  padding: .3rem .4rem;
+  padding: .3rem 0;
   display: flex;
   align-items: center;
   text-align: center;
   height: 100%;
   border: 2px solid;
+  display: flex;
+  justify-content: center;
 }
 
 :deep(a) {
