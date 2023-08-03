@@ -87,7 +87,7 @@
     </section>
     <section class="flex flex-col items-center px-8 text-blue-dark">
       <SectionTitleComponent title="notre offre" shadow="offre" dark id="offres"/>
-      <OfferBlockComponent title="audit" subtitle="Phase d'étude" img="/assets/images/audit.svg" class="border-red w-full mt-10" text=""/>
+      <OfferBlockComponent title="audit" subtitle="Phase d'étude" :img="auditUrl" class="border-red w-full mt-10" text=""/>
       <img class="h-6 my-2" src="/assets/images/scroll_arrow_homepage.svg">
       <h2 class="text-2xl font-extrabold">AUDIT</h2>
       <h3 class="text-center text-lg font-extrabold mb-6">DE L'EXTISTANT ET CONSTRUCTION D'UN PLAN STRATÉGIQUE</h3>
@@ -122,7 +122,7 @@
           </ul>
         </template>
       </TabbarComponent>
-      <OfferBlockComponent title="POC" subtitle="Phase de validation" img="/assets/images/poc.svg" class="border-blue w-full mt-10" text=""/>
+      <OfferBlockComponent title="POC" subtitle="Phase de validation" :img="pocUrl" class="border-blue w-full mt-10" text=""/>
       <img class="h-6 my-2" src="/assets/images/scroll_arrow_homepage.svg">
       <h2 class="text-2xl font-extrabold">PROOF OF CONCEPT</h2>
       <h3 class="text-center text-lg font-extrabold mb-6">(POC)</h3>
@@ -143,7 +143,7 @@
           <p>Tester la compatibilité de votre système, rassurer votre DSI et faire un quick-win pour convaincre la direction</p>
         </template>
       </TabbarComponent>
-      <OfferBlockComponent title="industrialisation" subtitle="Phase de production" img="/assets/images/industrialisation.svg" class="border-blue-light w-full mt-10" text=""/>
+      <OfferBlockComponent title="industrialisation" subtitle="Phase de production" :img="industrialisationUrl" class="border-blue-light w-full mt-10" text=""/>
       <img class="h-6 my-2" src="/assets/images/scroll_arrow_homepage.svg">
       <h2 class="text-2xl font-extrabold mb-6">INDUSTRIALISATION</h2>
       <TabbarComponent :tabs="tabs.industrialisation" id="industrialisation" class="text-[.65rem]" color="blue-light" textColor="blue-dark">
@@ -239,6 +239,10 @@ import OfferBlockComponent from './OfferBlockComponent.vue'
 import TabbarComponent from './TabbarComponent.vue'
 import ButtonComponent from './ButtonComponent.vue'
 import SliderComponent from './SliderComponent.vue'
+
+import auditUrl from '../../assets/images/audit.svg'
+import pocUrl from '../../assets/images/poc.svg'
+import industrialisationUrl from '../../assets/images/industrialisation.svg'
 
 const tabs = {
   audit: [{

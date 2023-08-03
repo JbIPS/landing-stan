@@ -1,13 +1,13 @@
 <template>
-  <div id="menu" class="ps-28">
-    <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo de Stan" class="mt-6">
+  <nav id="menu" class="ps-28">
+    <a href="/" @click="closeMenu"><img src="/assets/images/Stan_logo_bleu.svg" alt="Logo de Stan" class="mt-6"></a>
     <label for="menu_toggle" class="absolute top-3 right-6 block w-10 cursor-pointer">
       <img src="/assets/images/menu_close.svg" alt="Fermer le menu">
     </label>
-    <ul role="navigation" aria-label="Plan du site" ref='menu'>
+    <ul>
       <li>
         <a href="/a_propos" @click="closeMenu"><h2>À propos</h2></a>
-        <ul role="navigation" aria-label="Chapitres de la page À propos" class="arrowed">
+        <ul class="arrowed">
           <li><a href="/a_propos#vision" @click="closeMenu">Vision & ambition</a></li>
           <li><a href="/a_propos#souverainete" @click="closeMenu">Notre souveraineté / nos certifications</a></li>
           <li><a href="/a_propos#equipe" @click="closeMenu">L'équipe</a></li>
@@ -16,7 +16,7 @@
       </li>
       <li>
         <a href="/accompagnement" @click="closeMenu"><h2>Notre accompagnement</h2></a>
-        <ul role="navigation" aria-label="Chapitres de la page Accompagnement" class="arrowed">
+        <ul class="arrowed">
           <li><a href="/accompagnement#besoins" @click="closeMenu">Vos besoins</a></li>
           <li><a href="/accompagnement#offres" @click="closeMenu">Nos offres / nos solutions</a></li>
           <li><a href="/accompagnement#cas_usage" @click="closeMenu">Cas d'usage</a></li>
@@ -26,15 +26,14 @@
         <a href="/actualites" @click="closeMenu"><h2>Blog / Actus</h2></a>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-  const menuToggle = ref(null)
-onMounted(() => menuToggle.value = document.getElementById('menu_toggle'))
-
+const props = defineProps<{
+  menuToggle: HTMLInputElement
+}>()
 function closeMenu() {
-  (menuToggle.value as HTMLInputElement).checked = false
+  props.menuToggle.checked = false
 }
 </script>
 <style scoped>

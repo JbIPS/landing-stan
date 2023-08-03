@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useData, useRoute } from "vitepress";
 import Home from './Home.vue';
 import APropos from './APropos.vue'
@@ -6,19 +7,15 @@ import Offre from "./Offre.vue";
 import MenuComponent from "./MenuComponent.vue";
 
 // https://vitepress.dev/reference/runtime-api#usedata
-const { site } = useData<{
-  title: string
-  description: string
-}>();
-const route = useRoute()
-  
+const { site, frontmatter } = useData();
+const menuToggle = ref(null)
 </script>
 
 <template>
-  <nav :class="`py-2 pe-6 flex ${route.path === '/' ? 'justify-end' : 'justify-between'}`">
-    <a v-if="route.path !== '/'" href="/"><img src="/assets/images/Stan_symbole_blanc.svg" alt="Logo Stan blanc" class="ms-4 w-7"></a>
-    <input type="checkbox" id="menu_toggle" class="hidden">
-    <MenuComponent />
+  <nav :class="`py-2 pe-6 flex ${frontmatter.layout === 'home' ? 'justify-end' : 'justify-between'}`">
+    <a v-show="frontmatter.layout !== 'home'" href="/"><img src="/assets/images/Stan_symbole_blanc.svg" alt="Logo Stan blanc" class="ms-4 w-7"></a>
+    <input type="checkbox" id="menu_toggle" class="hidden" ref="menuToggle">
+    <MenuComponent :menu-toggle="menuToggle"/>
     <label for="menu_toggle" class="w-10 cursor-pointer">
       <img
         src="/assets/images/menu_open.svg"
@@ -27,18 +24,14 @@ const route = useRoute()
     </label>
   </nav>
   <main>
-    <div v-if="route.path === '/'">
+    <div v-if="frontmatter.layout === 'home'">
       <Home :description="site.description" :title="site.title"/>
     </div>
-    <div v-else-if="route.path === '/a_propos'">
+    <div v-else-if="frontmatter.layout === 'a_propos'">
       <APropos />
     </div>
-    <div v-else-if="route.path === '/accompagnement'">
+    <div v-else-if="frontmatter.layout === 'accompagnement'">
       <Offre/>
-    </div>
-    <div v-else>
-      <a href="/">Home</a>
-      <Content />
     </div>
   </main>
   <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2">
@@ -56,4 +49,31 @@ const route = useRoute()
   </footer>
 </template>
 <style scoped>
+nav {
+  background-color: rgb(var(--blue));
+  border-bottom: 2px solid rgb(var(--dark));
+  min-height: 4rem;
+  align-items: center;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+#button-menu {
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: none;
+}
+
+#button-menu > img {
+  width: 100%;
+  height: 100%;
+}
+
+.line-bg {
+  background-image: url(/assets/images/bkg_mobile.svg);
+  background-position-x: right;
+}
 </style>

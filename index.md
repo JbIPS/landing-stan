@@ -1,5 +1,3 @@
 ---
-home: true
+layout: home
 ---
-
-Hello

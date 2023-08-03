@@ -1,3 +1,3 @@
 ---
-page: a propos
+layout: a_propos
 ---

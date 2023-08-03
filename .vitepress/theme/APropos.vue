@@ -161,9 +161,9 @@
   </section>
   <section class="px-8 -mb-36 relative z-10">
     <h2 class="mt-4 mb-8 text-center text-blue-dark text-2xl font-extrabold" id="valeurs">NOS VALEURS</h2>
-    <OfferBlockComponent img="/assets/images/ensemble.svg" title="réussir ensemble" subtitle="Partage & transmission" text="Chez Stan, au-delà de vous proposer une solution, nous aimons partager nos analyses et expliquer notre raisonnement, nos solutions. Nous sommes persuadés que comprendre et partager est un facteur de réussite collective. Donc nos équipes sont pédagogues, à l’écoutes et patients." class="border-red"/>
-    <OfferBlockComponent img="/assets/images/transparence.svg" title="de la transparence" subtitle="Intelligence artificielle" text="L’innovation est un réel état d’esprit pour nos fondateurs. Nous comptons continuer de proposer à nos clients le meilleur de la science informatique. L’intelligence artificielle est un outil qu’on aime challenger, améliorer, voir évoluer. Au cœur de nos métiers, nous participons à son façonnage pour plus de performance, précision, protection." class="border-blue"/>
-    <OfferBlockComponent img="/assets/images/confiance.svg" title="Avancer en confiance" subtitle="transparence & sécurité" text="La confiance n’est pas un dû mais se mérite et nous en sommes conscients. Nous travaillons dans la transparence, tout en maintenant notre politique de confidentialité et de sécurité. Nos partenaires et collaborateurs sont sélectionnés dans le même état d’esprit. C’est l’alliance transparence et sécurité qui fait notre force." class="border-blue-light"/>
+    <OfferBlockComponent :img="ensembleUrl" title="réussir ensemble" subtitle="Partage & transmission" text="Chez Stan, au-delà de vous proposer une solution, nous aimons partager nos analyses et expliquer notre raisonnement, nos solutions. Nous sommes persuadés que comprendre et partager est un facteur de réussite collective. Donc nos équipes sont pédagogues, à l’écoutes et patients." class="border-red"/>
+    <OfferBlockComponent :img="transparenceUrl" title="de la transparence" subtitle="Intelligence artificielle" text="L’innovation est un réel état d’esprit pour nos fondateurs. Nous comptons continuer de proposer à nos clients le meilleur de la science informatique. L’intelligence artificielle est un outil qu’on aime challenger, améliorer, voir évoluer. Au cœur de nos métiers, nous participons à son façonnage pour plus de performance, précision, protection." class="border-blue"/>
+    <OfferBlockComponent :img="confianceUrl" title="Avancer en confiance" subtitle="transparence & sécurité" text="La confiance n’est pas un dû mais se mérite et nous en sommes conscients. Nous travaillons dans la transparence, tout en maintenant notre politique de confidentialité et de sécurité. Nos partenaires et collaborateurs sont sélectionnés dans le même état d’esprit. C’est l’alliance transparence et sécurité qui fait notre force." class="border-blue-light"/>
   </section>
   <section class="bg-blue pt-40 flex flex-col">
     <h2 class="font-extrabold text-2xl px-20 mb-8">NOS EXPERTISES & ENGAGEMENTS</h2>
@@ -191,6 +191,10 @@ import SectionTitleComponent from './SectionTitleComponent.vue'
 import TabbarComponent from './TabbarComponent.vue';
 import OfferBlockComponent from './OfferBlockComponent.vue';
 import ButtonComponent from './ButtonComponent.vue';
+
+import ensembleUrl from '../../assets/images/ensemble.svg'
+import transparenceUrl from '../../assets/images/transparence.svg'
+import confianceUrl from '../../assets/images/confiance.svg'
 
 const tabs = {
   jeremy: [{

@@ -13,16 +13,18 @@
   </div>
 </template>
 <script setup lang="ts">
-import {onMounted} from 'vue'
+import {onMounted, onBeforeMount} from 'vue'
 
 import '@glidejs/glide/dist/css/glide.core.min.css'
-import Glide from '@glidejs/glide/dist/glide.modular.esm'
+import Glide, { Controls, Swipe, Autoplay } from '@glidejs/glide/dist/glide.modular.esm'
 
-onMounted(() => new Glide('.glide', {
-  gap: 0,
-  autoplay: 10000,
-  type: 'carousel'
-}).mount())
+onMounted(() => {
+    new Glide('.glide', {
+      gap: 0,
+      autoplay: 10000,
+      type: 'carousel'
+  }).mount({ Controls, Swipe, Autoplay })
+})
 </script>
 <style>
 .glide__bullets {

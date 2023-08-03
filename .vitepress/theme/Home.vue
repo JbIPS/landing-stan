@@ -23,7 +23,7 @@
       <ButtonComponent href="#contact" text="Prendre rendez-vous pour une démonstration" class="mx-8"/>
     </div>
     <div class="justify-center line-bg">
-      <img class="h-10 mt-12" src="/assets/images/scroll_arrow_homepage.svg">
+      <img class="h-10 mt-12" src="/assets/images/scroll_arrow_homepage.svg" alt="Flèche pointant vers le bas pour inviter le visiteur à continuer le parcours de la page">
     </div>
   </section>
   <section class="bg-blue">
@@ -44,9 +44,9 @@
       <img class="w-2/4" src="/assets/images/Stan_logo_bleu.svg" alt="Stan">
     </SectionTitleComponent>
     <div class="offers">
-      <OfferBlockComponent img="/assets/images/audit.svg" title="audit" subtitle="Phase d'étude" text="Audit de l'existant et construction d'un plan stratégique" class="border-red"/>
-      <OfferBlockComponent img="/assets/images/poc.svg" title="poc" subtitle="Phase de validation" text="Test et mise en place d'une première version Stan" class="border-blue"/>
-      <OfferBlockComponent img="/assets/images/industrialisation.svg" title="industrialisation" subtitle="Phase de production" text="Élargissement du périmètre de la solution Stan" class="border-blue-light"/>
+      <OfferBlockComponent :img="auditUrl" title="audit" subtitle="Phase d'étude" text="Audit de l'existant et construction d'un plan stratégique" class="border-red"/>
+      <OfferBlockComponent :img="pocUrl" title="poc" subtitle="Phase de validation" text="Test et mise en place d'une première version Stan" class="border-blue"/>
+      <OfferBlockComponent :img="industrialisationUrl" title="industrialisation" subtitle="Phase de production" text="Élargissement du périmètre de la solution Stan" class="border-blue-light"/>
     </div>
     <ButtonComponent href="/accompagnement" text="En savoir plus" class="text-blue-dark my-8"/>
   </section>
@@ -107,6 +107,10 @@
 import SectionTitleComponent from './SectionTitleComponent.vue'
 import OfferBlockComponent from './OfferBlockComponent.vue'
 import ButtonComponent from './ButtonComponent.vue'
+
+import auditUrl from '../../assets/images/audit.svg'
+import pocUrl from '../../assets/images/poc.svg'
+import industrialisationUrl from '../../assets/images/industrialisation.svg'
 
 defineProps<{
   title: string
