@@ -7,16 +7,20 @@
         </li>
       </ul>
     </div>
-    <div class="glide__bullets" data-glide-el="controls[nav]">
+    <div v-if="!hideControls" class="glide__bullets" data-glide-el="controls[nav]">
       <button class="glide__bullet" :data-glide-dir="`=${idx}`" v-for="(slot, idx) in $slots"></button>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-import {onMounted, onBeforeMount} from 'vue'
+import {onMounted } from 'vue'
 
 import '@glidejs/glide/dist/css/glide.core.min.css'
 import Glide, { Controls, Swipe, Autoplay } from '@glidejs/glide/dist/glide.modular.esm'
+
+defineProps<{
+  hideControls: boolean
+}>();
 
 onMounted(() => {
     new Glide('.glide', {

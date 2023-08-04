@@ -1,18 +1,18 @@
 <template>
   <section id="title" class="flex flex-col text-center bg-blue">
-    <div class="grow justify-center">
+    <div class="grow justify-center lg:justify-start">
       <h1>
         <img
-          class="pure-img"
+          class=""
           src="/assets/images/PNG/STAN_Logo-Blanc.png"
           :alt="title"
         />
       </h1>
     </div>
-    <div class="px-16 text-2xl font-extrabold">
+    <div class="px-16 text-2xl font-extrabold lg:px-0">
       <h2>{{ description }}</h2>
     </div>
-    <div class="flex-col px-8 grow justify-around">
+    <div class="flex-col px-8 grow justify-around lg:px-0">
       <p>
         Nous <span class="text-white font-bold">démêlons</span> -
         <span class="text-red font-bold">facilitions</span> -
@@ -20,26 +20,31 @@
         confiance et souverain pour vous aider à créer de la valeur au sein de
         votre entreprise.
       </p>
-      <ButtonComponent href="#contact" text="Prendre rendez-vous pour une démonstration" class="mx-8"/>
+      <ButtonComponent href="#contact" text="Prendre rendez-vous pour une démonstration" class="mx-8 lg:mx-0 lg:w-3/4"/>
     </div>
-    <div class="justify-center line-bg">
+    <div class="justify-center line-bg lg:hidden">
       <img class="h-10 mt-12" src="/assets/images/scroll_arrow_homepage.svg" alt="Flèche pointant vers le bas pour inviter le visiteur à continuer le parcours de la page">
     </div>
   </section>
-  <section class="bg-blue">
-    <SectionTitleComponent title="alerte aux données mal traitées" shadow="alerte" class="px-8"/>
-    <p class="my-6 px-8 -mb-6">Au sein de vos entreprises, une denrée précieuse circule, se perd, dépérit, n’est pas protégée. Ce sont vos données ! Et pourtant elles représentent une partie importante de votre activité et peuvent être une nouvelle ressource économique !</p>
-    <div class="bg-white p-8 text-blue-dark font-bold text-center me-8 translate-y-14 relative z-20">
-      <p class="text-2xl mb-6">Les données représentent jusqu’à 15.5% du PIB mondial*</p>
-      <p class="text-xs">*RAPPORT L’ÉCONOMIE NUMÉRIQUE 2019 de L’ONU</p>
+  <section class="bg-blue lg:flex lg:flex-wrap">
+    <SectionTitleComponent title="alerte aux données mal traitées" shadow="alerte" class="px-8 lg:w-2/4 lg:text-3xl lg:text-end lg:px-36"/>
+    <div class="lg:w-2/4 lg:pe-44 lg:ps-16">
+      <p class="my-6 px-8 -mb-6">Au sein de vos entreprises, une denrée précieuse circule, se perd, dépérit, n’est pas protégée. Ce sont vos données ! Et pourtant elles représentent une partie importante de votre activité et peuvent être une nouvelle ressource économique !</p>
+      <div class="bg-white p-8 text-blue-dark font-bold text-center me-8 translate-y-14 relative z-20 lg:px-16">
+        <p class="text-2xl mb-6">Les données représentent jusqu’à 15.5% du PIB mondial*</p>
+        <p class="text-xs">*RAPPORT L’ÉCONOMIE NUMÉRIQUE 2019 de L’ONU</p>
+      </div>
     </div>
-    <div class="bg-blue-dark ms-8 p-8 pt-16 relative translate-y-7 z-10">
-      <p class="text-xl"><strong class="font-extrabold">Et oui, vos données aussi méritent le meilleur et pourtant elles sont souvent malmenées, mal traitées voire maltraitées !</strong></p>
+    <div class="relative -mt-8 lg:w-3/4 lg:bg-white lg:ps-12">
+      <img src="/assets/images/line_uturn_right.svg" alt="" class="hidden lg:block absolute left-11 -top-10 z-30 h-[115%]">
+      <div class="bg-blue-dark ms-8 p-8 pt-16 lg:px-40">
+      <p class="text-xl lg:pe-56"><strong class="font-extrabold">Et oui, vos données aussi méritent le meilleur et pourtant elles sont souvent malmenées, mal traitées voire maltraitées !</strong></p>
       <p class="my-6">La maltraitance, (d’une donnée chez Stan !) c’est mettre une donnée en situation de vulnérabilité lorsqu’une action ou un défaut d’action compromet ou porte atteinte à son développement, à ses droits, à ses besoins fondamentaux ou à sa santé et que cette atteinte intervient dans une relation de confiance, de dépendance, de soin ou d’accompagnement. Les situations de maltraitance (oui on parle toujours de la donnée !) peuvent être ponctuelles ou durables, intentionnelles ou non. Leur origine peut être individuelle, collective ou institutionnelle.</p>
       <p class="text-xl font-extrabold text-blue-light">Vos données méritent d’être mieux traitées, mieux gérées, mieux protégées, et mieux exploitées !</p>
+      </div>
     </div>
   </section>
-  <section class="bg-white pt-8 px-8 flex flex-col items-center border-b-2 border-blue-dark mb-4">
+  <section class="bg-white pt-8 px-8 lg:px-16 flex flex-col items-center lg:items-start border-b-2 border-blue-dark mb-4">
     <SectionTitleComponent title="découvrez nos offres" shadow="offres" class="mb-6" dark>
       <img class="w-2/4" src="/assets/images/Stan_logo_bleu.svg" alt="Stan">
     </SectionTitleComponent>
@@ -48,12 +53,13 @@
       <OfferBlockComponent :img="pocUrl" title="poc" subtitle="Phase de validation" text="Test et mise en place d'une première version Stan" class="border-blue"/>
       <OfferBlockComponent :img="industrialisationUrl" title="industrialisation" subtitle="Phase de production" text="Élargissement du périmètre de la solution Stan" class="border-blue-light"/>
     </div>
-    <ButtonComponent href="/accompagnement" text="En savoir plus" class="text-blue-dark my-8"/>
+    <ButtonComponent href="/accompagnement" text="En savoir plus" class="text-blue-dark my-8 lg:self-center"/>
   </section>
-  <section class="bg-blue px-8 flex flex-col justify-around items-center">
-    <SectionTitleComponent title="Une startup made in france" shadow="france"/>
-    <img src="/assets/images/startup.jpg" class="my-8" alt="Photo des locaux de las startup Stan">
-    <div class="flex startup">
+  <section class="bg-blue px-8 flex flex-col lg:flex-row-reverse justify-around items-center">
+    <SectionTitleComponent title="Une startup made in france" shadow="france" class="lg:hidden"/>
+    <img src="/assets/images/startup.jpg" class="my-8 lg:w-1/3 lg:m-0 lg:flex-grow lg:relative lg:-right-36 lg:aspect-[11/10]" alt="Photo des locaux de las startup Stan">
+    <div class="flex startup lg:w-2/4 lg:ps-28">
+      <SectionTitleComponent title="Une startup made in france" shadow="france" class="hidden lg:block lg:text-center lg:mb-6"/>
       <div>
         <h3>L'expertise du secteur assurance</h3>
         <p>Deux co-fondateurs qui sont tombés dedans il y a plus de 10 ans, avec une expertise pluri-métiers, et une conscience des enjeux de demain, notamment en matière de donnée.</p>
@@ -70,36 +76,46 @@
         <h3>Une rémunération win-win</h3>
         <p>Votre succès nous importe et nous vous le prouvons par notre politique tarifaire. Nous gagnons de l’argent si notre solution est utilisée !</p>
       </div>
+      <ButtonComponent href="/a_propos" text="Découvrez notre vision" class="my-8 hidden lg:block lg:w-1/4"/>
     </div>
-    <ButtonComponent href="/a_propos" text="Découvrez notre vision" class="my-8"/>
+    <ButtonComponent href="/a_propos" text="Découvrez notre vision" class="my-8 lg:hidden"/>
   </section>
-  <section class="bg-blue pb-8 flex flex-col relative">
-    <div class="bg-blue-light ms-6 text-blue-dark px-8 flex flex-col justify-around items-center -mb-20">
+  <section class="bg-blue pb-8 flex flex-col lg:flex-row-reverse relative">
+    <div class="bg-blue-light ms-6 text-blue-dark px-8 flex flex-col justify-around items-center -mb-20 lg:w-2/3 lg:me-20 lg:mb-20 lg:px-48 lg:items-start lg:pt-12">
       <SectionTitleComponent title="Un duo d'experts à votre service" shadow="experts" dark/>
       <p class="font-extrabold text-xl my-10"><strong>Stan, c’est la réunion de deux entrepreneurs, aux multi expertises.</strong></p>
       <p>Après une première aventure entrepreneuriale réussie dans la formation, <strong>le duo retrousse à nouveau ses manches pour participer à la création de valeurs dans l’économie du numérique français.</strong> L’un est incollable en data sciences, l’autre en intelligence économique. Les deux sont passionnés par les enjeux de la cybersécurité et de souveraineté. Un duo plein de ressources !</p>
-      <ButtonComponent href="/a_propos" text="Découvrez leur parcours" class="mt-8 mb-32"/>
+      <ButtonComponent href="/a_propos" text="Découvrez leur parcours" class="mt-8 mb-32 lg:mt-16 lg:mb-12 lg:text-white lg:bg-blue-dark lg:border-0 lg:w-1/3"/>
     </div>
-    <img src="/assets/images/Duo-casual.jpg" alt="Photo des deux fondateurs" class="w-11/12">
-    <img src="/assets/images/line_uturn.svg" alt="" class="w-3/5 absolute -bottom-8 right-0">
+    <img src="/assets/images/line_experts.svg" alt="" class="hidden lg:block lg:absolute lg:right-2 lg:bottom-28 lg:w-7/12 lg:z-10">
+    <img src="/assets/images/Duo-casual.jpg" alt="Photo des deux fondateurs" class="w-11/12 lg:w-1/3 lg:relative lg:left-44 lg:top-52 lg:h-[33rem]">
+    <img src="/assets/images/line_uturn.svg" alt="" class="w-3/5 absolute -bottom-8 right-0 lg:hidden">
   </section>
-  <section class="flex flex-col px-8 justify-around items-center pt-4">
-    <SectionTitleComponent title="Nos clients (anonymes) le disent" shadow="Témoignages" dark class="w-full"/>
-    <p class="italic text-blue-dark text-[1.1rem] my-8">Pour des raisons de sécurité, vous ne verrez jamais les clients de Stan. Nous préservons leur anonymat et leur (cyber)sécurité.</p>
-    <div class="border-2 border-blue-light flex flex-col text-blue-dark px-8 py-4 justify-around items-center">
-      <p class="self-start"><strong>Mme H.</strong></p>
-      <p><strong>Directrice des opérations d’une Institution de Prévoyance</strong></p>
-      <p class="my-4">« Travailler avec l’équipe Stan nous a permis d’automatiser nos outils sur nos offres standards dans un délai très court.»</p>
-      <button type="button" aria-role="suivant" class="border-2 rounded-full border-blue-dark w-8 h-8 text-4xl leading-4 font-extrabold">›</button>
-    </div>
-    <img src="/assets/images/line_vertical_up.svg" class="w-full h-20 -mt-2" alt="">
+  <section class="flex flex-col px-8 justify-around items-center lg:items-start pt-4 lg:ps-32">
+    <SectionTitleComponent title="Nos clients (anonymes) le disent" shadow="Témoignages" dark class="w-full lg:w-2/4"/>
+    <p class="italic text-blue-dark text-[1.1rem] my-8 lg:w-2/4">Pour des raisons de sécurité, vous ne verrez jamais les clients de Stan. Nous préservons leur anonymat et leur (cyber)sécurité.</p>
+    <SliderComponent class="" hideControls>
+      <template #0>
+        <div class="border-2 border-blue-light flex flex-col text-blue-dark px-8 py-4 justify-around items-center lg:border-0 lg:flex-row lg:justify-center lg:mb-24">
+          <div class="lg:bg-blue-dark lg:text-white lg:text-end lg:w-1/3 lg:relative lg:left-16 lg:ps-24 lg:pe-6 lg:py-12 lg:z-10">
+            <p class="self-start"><strong>Mme H.</strong></p>
+            <p><strong>Directrice des opérations d’une Institution de Prévoyance</strong></p>
+          </div>
+          <div class="lg:border-2 lg:border-blue-light lg:p-8 lg:w-2/4 lg:flex lg:flex-col lg:items-end lg:ps-24 lg:text-sm lg:relative lg:top-12 lg:bg-white">
+            <p class="my-4">« Travailler avec l’équipe Stan nous a permis d’automatiser nos outils sur nos offres standards dans un délai très court.»</p>
+            <button type="button" aria-role="suivant" class="border-2 rounded-full border-blue-dark w-8 h-8 text-4xl leading-4 font-extrabold lg:w-5 lg:h-5 lg:text-2xl lg:leading-3">›</button>
+          </div>
+        </div>
+      </template>
+    </SliderComponent>
+    <img src="/assets/images/line_vertical_up.svg" class="w-full h-20 -mt-2 lg:hidden" alt="">
   </section>
-  <section class="bg-blue flex flex-col px-8 pb-8 justify-around">
+  <section class="bg-blue flex flex-col px-8 pb-8 justify-around lg:-mt-28 lg:px-40 lg:pt-12">
     <SectionTitleComponent title="Contactez-nous" shadow="Contact" id="contact"/>
     <form class="flex flex-col justify-around w-full mt-10 text-blue-dark">
-      <input type="email" placeholder="Email" class="p-4 text-blue-dark" required>
-      <textarea placeholder="Votre message..." class="my-6 p-4" rows="4" required></textarea>
-      <input type="submit" value="Envoyer" class="bg-blue-light font-extrabold uppercase px-4 py-2 self-center">
+      <input type="email" placeholder="Email" class="p-4 text-blue-dark lg:w-2/4" required>
+      <textarea placeholder="Votre message..." class="my-6 p-4 lg:w-3/4" rows="4" required></textarea>
+      <input type="submit" value="Envoyer" class="bg-blue-light font-extrabold uppercase px-4 py-2 self-center lg:self-start lg:w-1/4">
     </form>
   </section>
 </template>
@@ -111,6 +127,7 @@ import ButtonComponent from './ButtonComponent.vue'
 import auditUrl from '../../assets/images/audit.svg'
 import pocUrl from '../../assets/images/poc.svg'
 import industrialisationUrl from '../../assets/images/industrialisation.svg'
+import SliderComponent from './SliderComponent.vue'
 
 defineProps<{
   title: string
@@ -184,5 +201,47 @@ h3 {
 
 .startup > div {
   width: 45%;
+}
+
+@media (min-width: 1024px) {
+  #title {
+    padding: 5rem;
+    height: 99vh;
+  }
+
+  #title > div {
+    width: 33%;
+    border: none;
+    text-align: left;
+    align-items:start;
+  }
+
+  #title > div.line-bg {
+    display: none;
+  }
+
+  h1 {
+    width: 80%;
+    text-align: center;
+  }
+
+  .offers {
+    background: none;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .offers > div {
+    width: 25%;
+  }
+
+  .startup > div:first-child {
+    width: 100%;
+  }
+
+  a.lg\:border-0 {
+    border: none;
+  }
 }
 </style>

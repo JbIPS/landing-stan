@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Groupe_29"
+   data-name="Groupe 29"
+   width="1101.067"
+   height="158.6757"
+   viewBox="0 0 1101.067 158.67571"
+   version="1.1"
+   sodipodi:docname="Groupe 29.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview11"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.0443563"
+     inkscape:cx="572.12277"
+     inkscape:cy="32.55594"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4">
+    <clipPath
+       id="clip-path">
+      <rect
+         id="Rectangle_43"
+         data-name="Rectangle 43"
+         width="612"
+         height="145.228"
+         fill="none"
+         stroke="#707070"
+         stroke-width="3"
+         x="0"
+         y="0" />
+    </clipPath>
+    <clipPath
+       id="clip-path-3">
+      <rect
+         id="Rectangle_42"
+         data-name="Rectangle 42"
+         width="1080.964"
+         height="3"
+         fill="none"
+         x="0"
+         y="0" />
+    </clipPath>
+  </defs>
+  <g
+     id="Groupe_28"
+     data-name="Groupe 28"
+     clip-path="url(#clip-path)"
+     transform="translate(484.2546,-0.21789732)">
+    <path
+       id="Tracé_95"
+       data-name="Tracé 95"
+       d="m 1.5,145.383 v -4.129 a 139.755,139.755 0 0 1 279.509,0 v 4.129"
+       transform="translate(-0.155,-0.155)"
+       fill="none"
+       stroke="#003caa"
+       stroke-width="3" />
+    <path
+       id="Tracé_96"
+       data-name="Tracé 96"
+       d="m 177.7,145.383 v -4.129 a 139.755,139.755 0 0 1 279.509,0 v 4.129"
+       transform="translate(-18.42,-0.155)"
+       fill="none"
+       stroke="#003caa"
+       stroke-width="3" />
+    <path
+       id="Tracé_97"
+       data-name="Tracé 97"
+       d="m 369.442,145.383 v -4.129 a 139.755,139.755 0 0 1 279.509,0 v 4.129"
+       transform="translate(-38.296,-0.155)"
+       fill="none"
+       stroke="#003caa"
+       stroke-width="3" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1"
+     transform="translate(484.2546,-0.21789732)">
+    <g
+       id="Groupe_3151"
+       data-name="Groupe 3151"
+       transform="translate(-1363.2546,-5083.1064)">
+      <g
+         id="Groupe_27"
+         data-name="Groupe 27"
+         transform="translate(-35.067,5226.5)">
+        <g
+           id="Groupe_26"
+           data-name="Groupe 26"
+           transform="translate(934.17)"
+           clip-path="url(#clip-path-3)">
+          <path
+             id="Tracé_94"
+             data-name="Tracé 94"
+             d="M 0,1.5 H 1080.964"
+             fill="none"
+             stroke="#003caa"
+             stroke-width="3" />
+        </g>
+      </g>
+      <circle
+         id="Ellipse_4"
+         data-name="Ellipse 4"
+         cx="17"
+         cy="17"
+         r="17"
+         transform="translate(879,5210)"
+         fill="#003caa" />
+    </g>
+  </g>
+</svg>
