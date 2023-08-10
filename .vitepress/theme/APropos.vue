@@ -1,26 +1,28 @@
 <template>
-  <section class="text-blue-dark flex flex-col items-center lg:pt-16 lg:flex-row lg:flex-wrap">
-    <SectionTitleComponent title="vision" shadow="vision" dark class="text-center" id="vision"/>
-    <p class="text-center italic mt-12">Notre rôle chez</p>
-    <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/3 mt-4">
-    <img src="/assets/images/line_fork.svg" alt="Logo Stan" class="w-9/12 mt-4">
-    <div class="flex gap-1 justify-between text-center px-4">
-      <div class="text-blue-dark">
-        <h3 class="font-extrabold text-xl">DÉMÊLER</h3>
-        <p>et améliorer votre gestion de données</p>
+  <section class="text-blue-dark flex flex-col items-center lg:pt-16 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:h-[90vh]">
+    <SectionTitleComponent title="vision" shadow="vision" dark class="text-center lg:col-start-1 lg:row-start-1" id="vision"/>
+    <div class="lg:col-start-2 lg:col-span-full lg:row-span-full lg:flex lg:flex-col lg:items-center lg:pt-16">
+      <p class="text-center italic mt-12 lg:text-2xl">Notre rôle chez</p>
+      <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/3 mt-4">
+      <img src="/assets/images/line_fork.svg" alt="Logo Stan" class="w-9/12 mt-4">
+      <div class="flex gap-1 justify-between text-center px-4 lg:w-full">
+        <div class="text-blue-dark">
+          <h3 class="font-extrabold text-xl">DÉMÊLER</h3>
+          <p>et améliorer votre gestion de données</p>
+        </div>
+        <div class="text-red">
+          <h3 class="font-extrabold text-xl">FACILITER</h3>
+          <p>et mieux exploiter vos données</p>
+        </div>
+        <div class="text-blue-light">
+          <h3 class="font-extrabold text-xl">VALORISER</h3>
+          <p>la vie des équipes et simplifier la gestion</p>
+        </div>
       </div>
-      <div class="text-red">
-        <h3 class="font-extrabold text-xl">FACILITER</h3>
-        <p>et mieux exploiter vos données</p>
-      </div>
-      <div class="text-blue-light">
-        <h3 class="font-extrabold text-xl">VALORISER</h3>
-        <p>la vie des équipes et simplifier la gestion</p>
-      </div>
+      <img class="h-10 mt-12" src="/assets/images/scroll_arrow_homepage.svg">
+      <p class="text-center mt-8 px-8 pb-8"><strong class="font-extrabold text-xl lg:text-3xl">Grâce à une solution saine et souveraine !</strong></p>
     </div>
-    <img class="h-10 mt-12" src="/assets/images/scroll_arrow_homepage.svg">
-    <p class="text-center mt-8 px-8 pb-8"><strong class="font-extrabold text-xl">Grâce à une solution saine et souveraine !</strong></p>
-    <div class="bg-blue w-full text-white flex flex-col items-center pt-8">
+    <div class="bg-blue w-full text-white flex flex-col items-center pt-8 lg:col-start-1 lg:row-start-2 lg:h-full lg:w-10/12 lg:ms-16">
       <h3 class="h4 text-blue-light">Chez STAN nous voulons :</h3>
       <ul role="list" class="arrow-list">
         <li>Préserver l'éco-système</li>
