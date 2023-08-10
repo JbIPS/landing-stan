@@ -29,7 +29,7 @@ const currentTab = ref(props.tabs[0])
 .blue input + label {
   background: rgb(var(--blue));
   color: rgb(var(--white));
-  border-color: rgb(var(--white));
+  border-color: rgb(var(--blue));
 }
 .blue input:checked + label {
   background: rgb(var(--white));

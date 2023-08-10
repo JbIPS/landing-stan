@@ -4,7 +4,7 @@
     <div class="lg:col-start-2 lg:col-span-full lg:row-span-full lg:flex lg:flex-col lg:items-center lg:pt-16">
       <p class="text-center italic mt-12 lg:text-2xl">Notre rôle chez</p>
       <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/3 mt-4">
-      <img src="/assets/images/line_fork.svg" alt="Logo Stan" class="w-9/12 mt-4">
+      <img src="/assets/images/line_fork.svg" alt="Trois lignes émanant du logo Stan pour aller vers les trois blocs de texte suivant" class="w-9/12 mt-4">
       <div class="flex gap-1 justify-between text-center px-4 lg:w-full">
         <div class="text-blue-dark">
           <h3 class="font-extrabold text-xl">DÉMÊLER</h3>

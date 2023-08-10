@@ -1,5 +1,5 @@
 <template>
-  <div class="glide">
+  <div class="glide" ref="glider">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
         <li class="glide__slide" v-for="(slot, idx) in $slots">
@@ -13,17 +13,19 @@
   </div>
 </template>
 <script setup lang="ts">
-import {onMounted } from 'vue'
+import {onMounted, ref } from 'vue'
 
 import '@glidejs/glide/dist/css/glide.core.min.css'
 import Glide, { Controls, Swipe, Autoplay } from '@glidejs/glide/dist/glide.modular.esm'
 
 defineProps<{
-  hideControls: boolean
+  hideControls?: boolean
 }>();
 
+const glider = ref(null)
+
 onMounted(() => {
-    new Glide('.glide', {
+    new Glide(glider.value, {
       gap: 0,
       autoplay: 10000,
       type: 'carousel'
@@ -34,7 +36,7 @@ onMounted(() => {
 .glide__bullets {
   display: flex;
   justify-content: center; 
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .glide__bullets > .glide__bullet {
