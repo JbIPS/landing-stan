@@ -150,7 +150,7 @@
         <img class="h-6 my-2 lg:mb-10" src="/assets/images/scroll_arrow_homepage.svg">
         <h2 class="text-2xl font-extrabold lg:text-3xl">PROOF OF CONCEPT</h2>
         <h3 class="text-center text-lg font-extrabold mb-6 lg:text-xl">(POC)</h3>
-        <TabbarComponent :tabs="tabs.poc" id="poc" class="text-[.65rem]" color="blue" textColor="blue-dark">
+        <TabbarComponent :tabs="tabs.poc" id="poc" class="text-[.65rem] lg:mt-7" color="blue" textColor="blue-dark">
           <template #qui>
             <p>Pour les entreprises ayant un plan stratégique de valorisation de leurs données</p>
           </template>
@@ -172,7 +172,7 @@
         <OfferBlockComponent title="industrialisation" subtitle="Phase de production" :img="industrialisationUrl" class="border-blue-light w-full mt-10" text=""/>
         <img class="h-6 my-2 lg:mb-10" src="/assets/images/scroll_arrow_homepage.svg">
         <h2 class="text-2xl font-extrabold mb-6 lg:text-3xl">INDUSTRIALISATION</h2>
-        <TabbarComponent :tabs="tabs.industrialisation" id="industrialisation" class="text-[.65rem]" color="blue-light" textColor="blue-dark">
+        <TabbarComponent :tabs="tabs.industrialisation" id="industrialisation" class="text-[.65rem] lg:mt-14" color="blue-light" textColor="blue-dark">
           <template #qui>
             <p>Pour ceux qui ont validé le PoC</p>
           </template>

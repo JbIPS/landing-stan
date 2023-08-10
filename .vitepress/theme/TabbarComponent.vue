@@ -1,12 +1,12 @@
 <template>
-  <div :class="`mb-8 ${color}`">
-    <div class="flex mb-6 justify-center">
+  <div :class="`mb-8 ${color} lg:w-full`">
+    <div class="flex mb-6 justify-center lg:flex-col">
       <div v-for="tab in tabs" :key="tab.id" class="flex-grow">
         <input type="radio" :name="`navtab_${id}`" :id="`${id}_${tab.id}`" class="hidden" :value="tab" v-model="currentTab">
         <label :for="`${id}_${tab.id}`" class="text-center">{{ tab.label }}</label>
       </div>
     </div>
-    <div :class="`text-${textColor}`">
+    <div :class="`text-${textColor} lg:text-sm`">
       <slot :name="currentTab.id"></slot>
     </div>
   </div>
