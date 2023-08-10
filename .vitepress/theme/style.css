@@ -39,4 +39,5 @@ body {
   color: rgb(var(--white));
   font-family: Urbanist;
   width: 100vw;
+  overflow-x: hidden;
 }

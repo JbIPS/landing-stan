@@ -26,7 +26,7 @@
       <img class="h-10 mt-12" src="/assets/images/scroll_arrow_homepage.svg" alt="Flèche pointant vers le bas pour inviter le visiteur à continuer le parcours de la page">
     </div>
   </section>
-  <section class="bg-blue lg:flex lg:flex-wrap">
+  <section class="bg-blue lg:flex lg:flex-wrap" id="alert">
     <SectionTitleComponent title="alerte aux données mal traitées" shadow="alerte" class="px-8 lg:w-2/4 lg:text-3xl lg:text-end lg:px-36"/>
     <div class="lg:w-2/4 lg:pe-44 lg:ps-16">
       <p class="my-6 px-8 -mb-6">Au sein de vos entreprises, une denrée précieuse circule, se perd, dépérit, n’est pas protégée. Ce sont vos données ! Et pourtant elles représentent une partie importante de votre activité et peuvent être une nouvelle ressource économique !</p>
@@ -44,7 +44,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-white pt-8 px-8 lg:px-16 flex flex-col items-center lg:items-start border-b-2 border-blue-dark mb-4">
+  <section class="bg-white pt-8 px-8 lg:px-16 flex flex-col items-center lg:items-start border-b-2 border-blue-dark mb-4lg:border-b-0" id="offres">
     <SectionTitleComponent title="découvrez nos offres" shadow="offres" class="mb-6" dark>
       <img class="w-2/4" src="/assets/images/Stan_logo_bleu.svg" alt="Stan">
     </SectionTitleComponent>
@@ -55,43 +55,45 @@
     </div>
     <ButtonComponent href="/accompagnement" text="En savoir plus" class="text-blue-dark my-8 lg:self-center"/>
   </section>
-  <section class="bg-blue px-8 flex flex-col lg:flex-row-reverse justify-around items-center">
-    <SectionTitleComponent title="Une startup made in france" shadow="france" class="lg:hidden"/>
-    <img src="/assets/images/startup.jpg" class="my-8 lg:w-1/3 lg:m-0 lg:flex-grow lg:relative lg:-right-36 lg:aspect-[11/10]" alt="Photo des locaux de las startup Stan">
-    <div class="flex startup lg:w-2/4 lg:ps-28">
-      <SectionTitleComponent title="Une startup made in france" shadow="france" class="hidden lg:block lg:text-center lg:mb-6"/>
-      <div>
-        <h3>L'expertise du secteur assurance</h3>
-        <p>Deux co-fondateurs qui sont tombés dedans il y a plus de 10 ans, avec une expertise pluri-métiers, et une conscience des enjeux de demain, notamment en matière de donnée.</p>
+  <section class="bg-blue" id="startup">
+    <div class="px-8 flex flex-col lg:flex-row-reverse justify-around items-center">
+      <SectionTitleComponent title="Une startup made in france" shadow="france" class="lg:hidden"/>
+      <img src="/assets/images/startup.jpg" class="my-8 lg:w-1/3 lg:m-0 lg:flex-grow lg:relative lg:-right-36 lg:aspect-[11/10]" alt="Photo des locaux de las startup Stan">
+      <div class="flex startup lg:w-2/4 lg:ps-28">
+        <SectionTitleComponent title="Une startup made in france" shadow="france" class="hidden lg:block lg:text-center lg:mb-6"/>
+        <div>
+          <h3>L'expertise du secteur assurance</h3>
+          <p>Deux co-fondateurs qui sont tombés dedans il y a plus de 10 ans, avec une expertise pluri-métiers, et une conscience des enjeux de demain, notamment en matière de donnée.</p>
+        </div>
+        <div>
+          <h3>Un cocktail d’I.A, de cybersécurité, de souveraineté</h3>
+          <p>Chez Stan, au café vous entendrez parler data science, open-source, mais aussi cyber-sûreté et intelligence économique. Des sujets au cœur de l’entreprise, qui nous passionnent !</p>
+        </div>
+        <div>
+          <h3>Tel un félin, agile, rapide et malin</h3>
+          <p>Petite structure mais agile, capable de se déployer avec flexibilité et douceur, sans perturber vos activités. Tout ceci rapidement, pas dans 3 ans, plutôt dans 3 semaines !</p>
+        </div>
+        <div>
+          <h3>Une rémunération win-win</h3>
+          <p>Votre succès nous importe et nous vous le prouvons par notre politique tarifaire. Nous gagnons de l’argent si notre solution est utilisée !</p>
+        </div>
+        <ButtonComponent href="/a_propos" text="Découvrez notre vision" class="my-8 hidden lg:block lg:w-1/4"/>
       </div>
-      <div>
-        <h3>Un cocktail d’I.A, de cybersécurité, de souveraineté</h3>
-        <p>Chez Stan, au café vous entendrez parler data science, open-source, mais aussi cyber-sûreté et intelligence économique. Des sujets au cœur de l’entreprise, qui nous passionnent !</p>
-      </div>
-      <div>
-        <h3>Tel un félin, agile, rapide et malin</h3>
-        <p>Petite structure mais agile, capable de se déployer avec flexibilité et douceur, sans perturber vos activités. Tout ceci rapidement, pas dans 3 ans, plutôt dans 3 semaines !</p>
-      </div>
-      <div>
-        <h3>Une rémunération win-win</h3>
-        <p>Votre succès nous importe et nous vous le prouvons par notre politique tarifaire. Nous gagnons de l’argent si notre solution est utilisée !</p>
-      </div>
-      <ButtonComponent href="/a_propos" text="Découvrez notre vision" class="my-8 hidden lg:block lg:w-1/4"/>
+      <ButtonComponent href="/a_propos" text="Découvrez notre vision" class="my-8 lg:hidden"/>
     </div>
-    <ButtonComponent href="/a_propos" text="Découvrez notre vision" class="my-8 lg:hidden"/>
-  </section>
-  <section class="bg-blue pb-8 flex flex-col lg:flex-row-reverse relative">
-    <div class="bg-blue-light ms-6 text-blue-dark px-8 flex flex-col justify-around items-center -mb-20 lg:w-2/3 lg:me-20 lg:mb-20 lg:px-48 lg:items-start lg:pt-12">
-      <SectionTitleComponent title="Un duo d'experts à votre service" shadow="experts" dark/>
-      <p class="font-extrabold text-xl my-10"><strong>Stan, c’est la réunion de deux entrepreneurs, aux multi expertises.</strong></p>
-      <p>Après une première aventure entrepreneuriale réussie dans la formation, <strong>le duo retrousse à nouveau ses manches pour participer à la création de valeurs dans l’économie du numérique français.</strong> L’un est incollable en data sciences, l’autre en intelligence économique. Les deux sont passionnés par les enjeux de la cybersécurité et de souveraineté. Un duo plein de ressources !</p>
-      <ButtonComponent href="/a_propos" text="Découvrez leur parcours" class="mt-8 mb-32 lg:mt-16 lg:mb-12 lg:text-white lg:bg-blue-dark lg:border-0 lg:w-1/3"/>
+    <div class="flex flex-col lg:flex-row-reverse relative">
+      <div class="bg-blue-light ms-6 text-blue-dark px-8 flex flex-col justify-around items-center -mb-20 lg:w-2/3 lg:me-20 lg:mb-20 lg:px-48 lg:items-start lg:pt-12">
+        <SectionTitleComponent title="Un duo d'experts à votre service" shadow="experts" dark/>
+        <p class="font-extrabold text-xl my-10"><strong>Stan, c’est la réunion de deux entrepreneurs, aux multi expertises.</strong></p>
+        <p>Après une première aventure entrepreneuriale réussie dans la formation, <strong>le duo retrousse à nouveau ses manches pour participer à la création de valeurs dans l’économie du numérique français.</strong> L’un est incollable en data sciences, l’autre en intelligence économique. Les deux sont passionnés par les enjeux de la cybersécurité et de souveraineté. Un duo plein de ressources !</p>
+        <ButtonComponent href="/a_propos" text="Découvrez leur parcours" class="mt-8 mb-32 lg:mt-16 lg:mb-12 lg:text-white lg:bg-blue-dark lg:border-0 lg:w-1/3"/>
+      </div>
+      <img src="/assets/images/line_experts.svg" alt="" class="hidden lg:block lg:absolute lg:right-2 lg:bottom-28 lg:w-7/12 lg:z-10">
+      <img src="/assets/images/Duo-casual.jpg" alt="Photo des deux fondateurs" class="w-11/12 lg:w-1/3 lg:relative lg:left-44 lg:top-52 lg:h-[33rem]">
+      <img src="/assets/images/line_uturn.svg" alt="" class="w-3/5 absolute -bottom-8 right-0 lg:hidden">
     </div>
-    <img src="/assets/images/line_experts.svg" alt="" class="hidden lg:block lg:absolute lg:right-2 lg:bottom-28 lg:w-7/12 lg:z-10">
-    <img src="/assets/images/Duo-casual.jpg" alt="Photo des deux fondateurs" class="w-11/12 lg:w-1/3 lg:relative lg:left-44 lg:top-52 lg:h-[33rem]">
-    <img src="/assets/images/line_uturn.svg" alt="" class="w-3/5 absolute -bottom-8 right-0 lg:hidden">
   </section>
-  <section class="flex flex-col px-8 justify-around items-center lg:items-start pt-4 lg:ps-32">
+  <section class="flex flex-col px-8 justify-around items-center lg:items-start pt-4 lg:ps-32" id="temoignages">
     <SectionTitleComponent title="Nos clients (anonymes) le disent" shadow="Témoignages" dark class="w-full lg:w-2/4"/>
     <p class="italic text-blue-dark text-[1.1rem] my-8 lg:w-2/4">Pour des raisons de sécurité, vous ne verrez jamais les clients de Stan. Nous préservons leur anonymat et leur (cyber)sécurité.</p>
     <SliderComponent class="" hideControls>
@@ -108,7 +110,7 @@
         </div>
       </template>
     </SliderComponent>
-    <img src="/assets/images/line_vertical_up.svg" class="w-full h-20 -mt-2 lg:hidden" alt="">
+    <img src="/assets/images/line_vertical_up.svg" class="w-full h-20 -mt-2 z-30 lg:hidden" alt="">
   </section>
   <section class="bg-blue flex flex-col px-8 pb-8 justify-around lg:-mt-28 lg:px-40 lg:pt-12">
     <SectionTitleComponent title="Contactez-nous" shadow="Contact" id="contact"/>
@@ -207,6 +209,7 @@ h3 {
   #title {
     padding: 5rem;
     height: 99vh;
+    background-image: url(/assets/images/bkg_desktop_1.svg);
   }
 
   #title > div {
@@ -214,6 +217,11 @@ h3 {
     border: none;
     text-align: left;
     align-items:start;
+  }
+
+  #title, #alert, #offres {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #title > div.line-bg {
@@ -225,19 +233,40 @@ h3 {
     text-align: center;
   }
 
+  #alert {
+    background-image: url(/assets/images/bkg_desktop_2.svg);
+    background-position: bottom right;
+  }
+
+  #offres {
+    background-image: url(/assets/images/bkg_desktop_3.svg);
+    background-position: right;
+  }
+
   .offers {
     background: none;
     margin-top: 4rem;
     display: flex;
     justify-content: space-evenly;
+    align-self: center;
   }
 
   .offers > div {
     width: 25%;
   }
 
+  #startup {
+    background-image: url(/assets/images/bkg_desktop_4.svg);
+  }
+
   .startup > div:first-child {
     width: 100%;
+  }
+
+  #temoignages {
+    background-image: url(/assets/images/bkg_desktop_5.svg);
+    background-position: bottom 7rem right;
+    background-repeat: no-repeat;
   }
 
   a.lg\:border-0 {
