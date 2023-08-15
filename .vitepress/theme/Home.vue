@@ -28,23 +28,23 @@
   </section>
   <section class="bg-blue lg:flex lg:flex-wrap" id="alert">
     <SectionTitleComponent title="alerte aux données mal traitées" shadow="alerte" class="px-8 lg:w-2/4 lg:text-3xl lg:text-end lg:px-36"/>
-    <div class="lg:w-2/4 lg:pe-44 lg:ps-16">
-      <p class="my-6 px-8 -mb-6">Au sein de vos entreprises, une denrée précieuse circule, se perd, dépérit, n’est pas protégée. Ce sont vos données ! Et pourtant elles représentent une partie importante de votre activité et peuvent être une nouvelle ressource économique !</p>
+    <div class="lg:w-2/4 lg:pe-44 lg:ps-16 lg:mt-28">
+      <p class="my-6 px-8 -mb-6">Au sein de vos entreprises, une denrée précieuse circule, se perd, dépérit, n’est pas protégée. Ce sont vos données ! Et pourtant elles représentent une partie importante de votre activité et peuvent être une nouvelle ressource économique&nbsp;!</p>
       <div class="bg-white p-8 text-blue-dark font-bold text-center me-8 translate-y-14 relative z-20 lg:px-16">
         <p class="text-2xl mb-6">Les données représentent jusqu’à 15.5% du PIB mondial*</p>
         <p class="text-xs">*RAPPORT L’ÉCONOMIE NUMÉRIQUE 2019 de L’ONU</p>
       </div>
     </div>
-    <div class="relative -mt-8 lg:w-3/4 lg:bg-white lg:ps-12">
-      <img src="/assets/images/line_uturn_right.svg" alt="" class="hidden lg:block absolute left-11 -top-10 z-30 h-[115%]">
-      <div class="bg-blue-dark ms-8 p-8 pt-16 lg:px-40">
-      <p class="text-xl lg:pe-56"><strong class="font-extrabold">Et oui, vos données aussi méritent le meilleur et pourtant elles sont souvent malmenées, mal traitées voire maltraitées !</strong></p>
-      <p class="my-6">La maltraitance, (d’une donnée chez Stan !) c’est mettre une donnée en situation de vulnérabilité lorsqu’une action ou un défaut d’action compromet ou porte atteinte à son développement, à ses droits, à ses besoins fondamentaux ou à sa santé et que cette atteinte intervient dans une relation de confiance, de dépendance, de soin ou d’accompagnement. Les situations de maltraitance (oui on parle toujours de la donnée !) peuvent être ponctuelles ou durables, intentionnelles ou non. Leur origine peut être individuelle, collective ou institutionnelle.</p>
-      <p class="text-xl font-extrabold text-blue-light">Vos données méritent d’être mieux traitées, mieux gérées, mieux protégées, et mieux exploitées !</p>
+    <div class="relative -mt-8 lg:w-8/12 lg:bg-white lg:ps-12">
+      <img src="/assets/images/line_uturn_right.svg" alt="" class="hidden lg:block absolute left-11 -top-10 z-30 lg:w-10/12 lg:-top-14">
+      <div class="bg-blue-dark ms-8 p-8 pt-16 lg:pe-52 lg:ps-36 lg:py-20">
+        <p class="text-xl lg:pe-56"><strong class="font-extrabold">Et oui, vos données aussi méritent le meilleur et pourtant elles sont souvent malmenées, mal traitées voire maltraitées !</strong></p>
+        <p class="my-6">La maltraitance, (d’une donnée chez Stan !) c’est mettre une donnée en situation de vulnérabilité lorsqu’une action ou un défaut d’action compromet ou porte atteinte à son développement, à ses droits, à ses besoins fondamentaux ou à sa santé et que cette atteinte intervient dans une relation de confiance, de dépendance, de soin ou d’accompagnement. Les situations de maltraitance (oui on parle toujours de la donnée !) peuvent être ponctuelles ou durables, intentionnelles ou non. Leur origine peut être individuelle, collective ou institutionnelle.</p>
+        <p class="text-xl font-extrabold text-blue-light">Vos données méritent d’être mieux traitées, mieux gérées, mieux protégées, et mieux exploitées !</p>
       </div>
     </div>
   </section>
-  <section class="bg-white pt-8 px-8 lg:px-16 flex flex-col items-center lg:items-start border-b-2 border-blue-dark mb-4lg:border-b-0" id="offres">
+  <section class="bg-white pt-8 px-8 lg:px-16 flex flex-col items-center lg:items-start border-b-2 border-blue-dark mb-4lg:border-b-0 lg:justify-evenly" id="offres">
     <SectionTitleComponent title="découvrez nos offres" shadow="offres" class="mb-6" dark>
       <img class="w-2/4" src="/assets/images/Stan_logo_bleu.svg" alt="Stan">
     </SectionTitleComponent>
@@ -58,9 +58,9 @@
   <section class="bg-blue" id="startup">
     <div class="px-8 flex flex-col lg:flex-row-reverse justify-around items-center">
       <SectionTitleComponent title="Une startup made in france" shadow="france" class="lg:hidden"/>
-      <img src="/assets/images/startup.jpg" class="my-8 lg:w-1/3 lg:m-0 lg:flex-grow lg:relative lg:-right-36 lg:aspect-[11/10]" alt="Photo des locaux de las startup Stan">
+      <img src="/assets/images/startup.jpg" class="my-8 lg:w-1/3 lg:m-0 lg:flex-grow lg:relative lg:-right-36 " alt="Photo des locaux de las startup Stan">
       <div class="flex startup lg:w-2/4 lg:ps-28">
-        <SectionTitleComponent title="Une startup made in france" shadow="france" class="hidden lg:block lg:text-center lg:mb-6"/>
+        <SectionTitleComponent title="Une startup made in france" shadow="france" class="hidden lg:flex lg:mb-6"/>
         <div>
           <h3>L'expertise du secteur assurance</h3>
           <p>Deux co-fondateurs qui sont tombés dedans il y a plus de 10 ans, avec une expertise pluri-métiers, et une conscience des enjeux de demain, notamment en matière de donnée.</p>
@@ -81,22 +81,23 @@
       </div>
       <ButtonComponent href="/a_propos" text="Découvrez notre vision" class="my-8 lg:hidden"/>
     </div>
-    <div class="flex flex-col lg:flex-row-reverse relative">
-      <div class="bg-blue-light ms-6 text-blue-dark px-8 flex flex-col justify-around items-center -mb-20 lg:w-2/3 lg:me-20 lg:mb-20 lg:px-48 lg:items-start lg:pt-12">
-        <SectionTitleComponent title="Un duo d'experts à votre service" shadow="experts" dark/>
+    <div class="flex flex-col lg:flex-row-reverse relative lg:items-center lg:h-screen">
+      <div class="bg-blue-light ms-6 text-blue-dark px-8 flex flex-col justify-around items-center -mb-20 lg:w-2/3 lg:me-20 lg:mb-20 lg:px-48 lg:items-start lg:pt-12 lg:ps-60 lg:pb-20">
+        <SectionTitleComponent title="Un duo d'experts à votre service" shadow="experts" class="lg:-ms-14" dark/>
         <p class="font-extrabold text-xl my-10"><strong>Stan, c’est la réunion de deux entrepreneurs, aux multi expertises.</strong></p>
         <p>Après une première aventure entrepreneuriale réussie dans la formation, <strong>le duo retrousse à nouveau ses manches pour participer à la création de valeurs dans l’économie du numérique français.</strong> L’un est incollable en data sciences, l’autre en intelligence économique. Les deux sont passionnés par les enjeux de la cybersécurité et de souveraineté. Un duo plein de ressources !</p>
         <ButtonComponent href="/a_propos" text="Découvrez leur parcours" class="mt-8 mb-32 lg:mt-16 lg:mb-12 lg:text-white lg:bg-blue-dark lg:border-0 lg:w-1/3"/>
       </div>
-      <img src="/assets/images/line_experts.svg" alt="" class="hidden lg:block lg:absolute lg:right-2 lg:bottom-28 lg:w-7/12 lg:z-10">
-      <img src="/assets/images/Duo-casual.jpg" alt="Photo des deux fondateurs" class="w-11/12 lg:w-1/3 lg:relative lg:left-44 lg:top-52 lg:h-[33rem]">
+      <img src="/assets/images/line_experts.svg" alt="" class="hidden lg:block lg:absolute lg:right-4 lg:bottom-60 lg:w-7/12 lg:z-10">
+      <img src="/assets/images/Duo-casual.jpg" alt="Photo des deux fondateurs, Jean-Baptiste Richardet à gauche et Jérémy Marlin à droite" class="w-11/12 lg:w-1/3 lg:relative lg:left-52 lg:top-28">
       <img src="/assets/images/line_uturn.svg" alt="" class="w-3/5 absolute -bottom-8 right-0 lg:hidden">
     </div>
   </section>
-  <section class="flex flex-col px-8 justify-around items-center lg:items-start pt-4 lg:ps-32" id="temoignages">
-    <SectionTitleComponent title="Nos clients (anonymes) le disent" shadow="Témoignages" dark class="w-full lg:w-2/4"/>
-    <p class="italic text-blue-dark text-[1.1rem] my-8 lg:w-2/4">Pour des raisons de sécurité, vous ne verrez jamais les clients de Stan. Nous préservons leur anonymat et leur (cyber)sécurité.</p>
-    <SliderComponent class="" hideControls>
+  <section class="flex flex-col px-8 justify-around items-center lg:items-start pt-4 lg:ps-0 lg:relative" id="temoignages">
+    <SectionTitleComponent title="Nos clients (anonymes) le disent" shadow="Témoignages" dark class="w-full lg:w-2/4 lg:ms-40"/>
+    <img src="/assets/images/line_zigzag.svg" alt="" class="hidden lg:block lg:absolute lg:left:0 lg:w-64 lg:z-10">
+    <p class="italic text-blue-dark text-[1.1rem] my-8 lg:w-2/4 lg:ms-40">Pour des raisons de sécurité, vous ne verrez jamais les clients de Stan. Nous préservons leur anonymat et leur (cyber)sécurité.</p>
+    <SliderComponent class="lg:ms-60" hideControls>
       <template #0>
         <div class="border-2 border-blue-light flex flex-col text-blue-dark px-8 py-4 justify-around items-center lg:border-0 lg:flex-row lg:justify-center lg:mb-24">
           <div class="lg:bg-blue-dark lg:text-white lg:text-end lg:w-1/3 lg:relative lg:left-16 lg:ps-24 lg:pe-6 lg:py-12 lg:z-10">
@@ -105,7 +106,23 @@
           </div>
           <div class="lg:border-2 lg:border-blue-light lg:p-8 lg:w-2/4 lg:flex lg:flex-col lg:items-end lg:ps-24 lg:text-sm lg:relative lg:top-12 lg:bg-white">
             <p class="my-4">« Travailler avec l’équipe Stan nous a permis d’automatiser nos outils sur nos offres standards dans un délai très court.»</p>
-            <button type="button" aria-role="suivant" class="border-2 rounded-full border-blue-dark w-8 h-8 text-4xl leading-4 font-extrabold lg:w-5 lg:h-5 lg:text-2xl lg:leading-3">›</button>
+            <div data-glide-el="controls">
+              <button data-glide-dir=">" type="button" aria-role="suivant" class="border-2 rounded-full border-blue-dark w-8 h-8 text-4xl leading-4 font-extrabold lg:w-5 lg:h-5 lg:text-2xl lg:leading-3">›</button>
+            </div>
+          </div>
+        </div>
+      </template>
+      <template #1>
+        <div class="border-2 border-blue-light flex flex-col text-blue-dark px-8 py-4 justify-around items-center lg:border-0 lg:flex-row lg:justify-center lg:mb-24">
+          <div class="lg:bg-blue-dark lg:text-white lg:text-end lg:w-1/3 lg:relative lg:left-16 lg:ps-24 lg:pe-6 lg:py-12 lg:z-10">
+            <p class="self-start"><strong>M R.</strong></p>
+            <p><strong>Expert comptable</strong></p>
+          </div>
+          <div class="lg:border-2 lg:border-blue-light lg:p-8 lg:w-2/4 lg:flex lg:flex-col lg:items-end lg:ps-24 lg:text-sm lg:relative lg:top-12 lg:bg-white">
+            <p class="my-4">« Je me  sens plus serein quand j'utilise Stan, au moins je sais où sont les données de mes clients.»</p>
+            <div data-glide-el="controls">
+              <button data-glide-dir=">" type="button" aria-role="suivant" class="border-2 rounded-full border-blue-dark w-8 h-8 text-4xl leading-4 font-extrabold lg:w-5 lg:h-5 lg:text-2xl lg:leading-3">›</button>
+            </div>
           </div>
         </div>
       </template>
@@ -210,6 +227,7 @@ h3 {
     padding: 5rem;
     height: 99vh;
     background-image: url(/assets/images/bkg_desktop_1.svg);
+    background-position-y: -1.5rem;
   }
 
   #title > div {
@@ -241,6 +259,7 @@ h3 {
   #offres {
     background-image: url(/assets/images/bkg_desktop_3.svg);
     background-position: right;
+    min-height: 100vh;
   }
 
   .offers {
@@ -249,6 +268,7 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     align-self: center;
+    width: 100%;
   }
 
   .offers > div {
@@ -267,10 +287,16 @@ h3 {
     background-image: url(/assets/images/bkg_desktop_5.svg);
     background-position: bottom 7rem right;
     background-repeat: no-repeat;
+    background-size: 30%;
   }
 
   a.lg\:border-0 {
     border: none;
+  }
+
+  form > textarea {
+    background-size: 6rem auto;
+    background-position-x: 107%;
   }
 }
 </style>

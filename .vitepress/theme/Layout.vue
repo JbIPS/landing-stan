@@ -34,9 +34,9 @@ const menuToggle = ref(null)
       <Offre/>
     </div>
   </main>
-  <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2 lg:py-5">
-      <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/6 pe-2 lg:pe-8">
-      <div class="flex w-1/6 border-s-2 justify-around h-6 items-center lg:justify-center lg:gap-4">
+  <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2 lg:py-10 lg:max-h-16">
+      <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/6 pe-2 lg:pe-8 lg:w-auto">
+      <div class="flex w-1/6 border-s-2 justify-around h-6 items-center lg:justify-center lg:gap-4 lg:h-full">
         <a href=""><img src="/assets/images/logo_linkedin.svg" alt="Logo LinkedIn" class="lg:w-10"></a>
         <a href=""><img src="/assets/images/logo_twitter.svg" alt="Logo Twitter" class="lg:w-10"></a>
         <a href=""><img src="/assets/images/logo_youtube.svg" alt="Logo YouTube" class="lg:w-10"></a>

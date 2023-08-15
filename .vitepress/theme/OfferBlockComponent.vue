@@ -1,9 +1,9 @@
 <template>
   <div class="bg-white">
-    <img :src="img" alt="" class="w-1/5 my-4">
-    <h3 class="font-extrabold text-xl">{{ title.toUpperCase() }}</h3>
-    <h4 class="italic text-xl">{{ subtitle }}</h4>
-    <p class="text-center px-4 my-4">{{ text }}</p>
+    <img :src="img" alt="" class="w-1/5 my-4 lg:w-1/3">
+    <h3 class="font-extrabold text-xl lg:text-2xl">{{ title.toUpperCase() }}</h3>
+    <h4 class="italic text-xl lg:text-2xl">{{ subtitle }}</h4>
+    <p class="text-center px-4 my-4 lg:text-lg">{{ text }}</p>
   </div>
 </template>
 <script setup lang="ts">
@@ -26,5 +26,13 @@ div {
 
 div > * {
   color: rgb(var(--blue-dark));
+}
+
+@media (min-width: 1024px) {
+  div {
+    border-width: 7px;
+    padding: 1rem 3rem;
+    margin-bottom: 0;
+  }
 }
 </style>
