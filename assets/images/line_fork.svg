@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.29 41.67"><defs><style>.cls-1{fill:#000061;}.cls-2{fill:none;stroke:#000061;stroke-width:2px;}</style></defs><g id="Groupe_2890"><circle id="Ellipse_13" class="cls-1" cx="10.24" cy="32.61" r="4"/><circle id="Ellipse_14" class="cls-1" cx="126.51" cy="32" r="4"/><circle id="Ellipse_15" class="cls-1" cx="251.05" cy="32.61" r="4"/><path id="Tracé_1510" class="cls-2" d="m9.97,32.18V5.06h241.08v27.11"/><path id="Tracé_1511" class="cls-2" d="m126.51,5.06v27.11"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="738" height="85.816" viewBox="0 0 738 85.816">
+  <g id="Groupe_2890" data-name="Groupe 2890" transform="translate(-0.043 1.5)">
+    <g id="Groupe_3038" data-name="Groupe 3038">
+      <ellipse id="Ellipse_13" data-name="Ellipse 13" cx="9.5" cy="10" rx="9.5" ry="10" transform="translate(0.043 83.981) rotate(-90)" fill="#000061"/>
+      <ellipse id="Ellipse_14" data-name="Ellipse 14" cx="9.837" cy="9.837" rx="9.837" ry="9.837" transform="translate(359.05 84.316) rotate(-90)" fill="#000061"/>
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="9.5" cy="9.5" r="9.5" transform="translate(719.043 83.981) rotate(-90)" fill="#000061"/>
+      <g id="Groupe_3037" data-name="Groupe 3037">
+        <path id="Tracé_1510" data-name="Tracé 1510" d="M-1187.5,623.764v-73.9h718.1v73.9" transform="translate(1197.335 -549.864)" fill="none" stroke="#000061" stroke-width="3"/>
+        <path id="Tracé_1511" data-name="Tracé 1511" d="M-877.249,550.661v73.9" transform="translate(1246.136 -550.661)" fill="none" stroke="#000061" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,12 +1,12 @@
 <template>
   <div :class="`mb-8 ${color} lg:w-full`">
     <div class="flex mb-6 justify-center lg:flex-col">
-      <div v-for="tab in tabs" :key="tab.id" class="flex-grow">
+      <div v-for="tab in tabs" :key="tab.id" class="flex-grow lg:relative">
         <input type="radio" :name="`navtab_${id}`" :id="`${id}_${tab.id}`" class="hidden" :value="tab" v-model="currentTab">
         <label :for="`${id}_${tab.id}`" class="text-center">{{ tab.label }}</label>
       </div>
     </div>
-    <div :class="`text-${textColor} lg:text-sm`">
+    <div :class="`text-${textColor} lg:text-sm lg:px-4`">
       <slot :name="currentTab.id"></slot>
     </div>
   </div>
@@ -106,5 +106,33 @@ label {
 
 :deep(li ::before) {
   color: red !important;
+}
+
+@media (min-width: 1024px) {
+  label::after {
+    content: ' ';
+    background: url(/assets/images/arrow_down.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    right: 1rem;
+  }
+
+  input:checked + label::after {
+    filter: brightness(0);
+    rotate: 180deg;
+  }
+
+  .white label::after {
+    filter: brightness(0);
+  }
+
+  .white input:checked + label::after {
+    filter: none;
+  }
 }
 </style>

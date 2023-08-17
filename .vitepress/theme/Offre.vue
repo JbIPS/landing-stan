@@ -15,7 +15,7 @@
         </div>
         <div class="w-2/4 flex-grow text-blue-dark flex flex-col items-center lg:w-1/4 lg:flex-grow-0">
           <img src="/assets/images/souverainete.svg" alt="" class="max-w-[50px] my-1 lg:max-w-[90px]">
-          <h3 class="font-extrabold text-xl lg:text-2xl">SOUVERAINETE</h3>
+          <h3 class="font-extrabold text-xl lg:text-2xl">SOUVERAINETÉ</h3>
           <p class="text-center px-3 my-2">Vous cherchez une <strong>solution numérique souveraine reconnue</strong> pour répondre à vos problématiques ?</p>
         </div>
       </div>
@@ -36,14 +36,14 @@
       </SliderComponent>
     </section> 
     <section class="flex flex-col items-center advantages">
-      <div class="relative flex flex-col lg:items-center">
-        <img class="absolute w-[10%] right-2 top-9 z-20" src="/assets/images/line_right_down.svg" alt="">
+      <div class="relative flex flex-col lg:items-center" id="simplifier">
+        <img class="absolute w-[10%] right-2 top-9 z-20 lg:hidden" src="/assets/images/line_right_down.svg" alt="">
         <div class="bg-blue px-8 pt-8 self-start w-[90%] pb-96 lg:w-2/3 lg:ps-24 lg:pt-16 lg:pe-44 lg:pb-52">
           <h2 class="text-2xl font-extrabold mb-8 lg:text-3xl">SIMPLIFIER ET AUTOMATISER</h2>
           <h3 class="italic text-blue-light font-extrabold mb-8 text-lg lg:text-xl">Dans l'impasse</h3>
           <p class="pb-6 lg:ps-10">Les données sont <strong>une nouvelle ressource</strong> économique pour toute entreprise. La capacité à transformer les données constitue un atout et un avantage concurrentiel.</p>
         </div>
-        <div class="bg-red ps-14 pe-10 py-6 self-end w-[90%] -mt-96 relative z-10 lg:w-5/12 lg:self-auto lg:left-1/4 lg:-mt-56">
+        <div class="bg-red ps-14 pe-10 py-6 self-end w-[90%] -mt-96 relative z-10 lg:w-5/12 lg:self-auto lg:left-1/4 lg:-ms-8 lg:-mt-56">
           <h3 class="italic text-white font-extrabold mb-8 text-lg">Et pourtant</h3>
           <ul role="list" class="text-sm arrowed">
             <li><strong><span class="text-2xl">57%</span> des entreprises craignent que le volume de données augmente trop vite</strong> avant que leurs organisations puissent s’y être préparées correctement.</li>
@@ -54,7 +54,7 @@
           </ul>
         </div>
       </div>
-      <div class="bg-blue w-full lg:pb-20">
+      <div class="bg-blue w-full flex flex-col" id="impasse">
         <div class="bg-blue-dark px-8 py-6 w-full -mt-40 pt-40 lg:w-10/12 lg:self-start lg:px-24">
           <h3 class="italic text-blue-light font-extrabold my-8 text-lg">Stan vous sort de l'impasse</h3>
           <p>Nos clients se retrouvent souvent dans l’impasse d’un héritage technologique qui peut-être lourd avec des langages techniques d’un ancien temps, qui doivent continuer d’interagir avec des technologies plus récentes. Il est parfois complexe de faire vivre toutes ces technologies dans une architecture commune.</p>
@@ -65,10 +65,8 @@
             <p class="text-blue-dark">C’est pourquoi nous lui avons donné une structure légère et composite pour qu’il puisse s’adapter rapidement et simplement à vos nouveaux besoins. Vous changez de SI ? Stan change son adaptateur grâce à sa technologie “Plug-n-Play” ! Votre direction juridique vous demande une nouvelle étape de contrôle ? Le moteur de règles de Stan vous permet de modifier son comportement en quelques clics.</p>
           </div>
         </div>
-      </div>
-      <div class="lg:bg-blue lg:w-full flex flex-col">
-        <div class="bg-white px-8 self-start w-[90%] pb-96 relative lg:w-2/3 lg:py-10 lg:px-20">
-          <img class="absolute h-80 -right-4 -top-2 z-20" src="/assets/images/line_down_small.svg" alt="">
+        <div class="bg-white px-8 self-start w-[90%] pb-96 relative lg:w-2/3 lg:py-10 lg:px-20 lg:mt-20">
+          <img class="absolute h-80 -right-4 -top-2 z-20 lg:hidden" src="/assets/images/line_down_small.svg" alt="">
           <h2 class="text-blue-dark text-2xl font-extrabold my-8">SÉCURISER</h2>
           <h3 class="italic text-blue-light font-extrabold mb-4 text-lg">Protéger vos données = protéger votre entreprise</h3>
           <p class="pb-6 text-blue-dark lg:ps-20 lg:pe-40">La protection des données est un maillon vital pour garantir votre survie sur votre secteur notamment pour les organismes d’assurance qui gèrent des données sensibles comme de la donnée RH ou de santé.</p>
@@ -81,6 +79,8 @@
             <li class="arrowed"><strong class="text-2xl">50%</strong>des cyberattaques concernent des TPE/PME. Selon l’étude Sectigo, en 2020. L’expérience montre que ces attaques passent en premier lieu par les prestataires de ces entreprises.</li>
           </ul>
         </div>
+      </div>
+      <div class="lg:bg-blue lg:w-full flex flex-col" id="protege">
         <div class="bg-blue px-8 py-6 w-full -mt-40 pt-40 lg:w-1/2 lg:-mt-72 lg:ps-20">
           <h3 class="italic text-blue-light font-extrabold my-8 text-lg lg:text-2xl">Stan protège</h3>
           <p class="lg:ps-20 lg:mb-6"><strong>Nous sommes là pour évaluer les possibilités de malveillances d’un attaquant sur vos données exposées</strong>. Nous souhaitons vous éviter qu’un attaquant arrive à pénétrer votre système informatique et divulgue les données de vos clients ou que vous exposiez involontairement des données sensibles (le numéro de sécurité social de vos clients, leur RIB…).</p>
@@ -93,14 +93,14 @@
             <h3 class="italic font-extrabold mb-5 text-lg">Travailler Stan c’est également avoir une base de travail qui s’adapte à norme DORA.</h3>
             <p>Le projet de règlement de la Commission européenne « DORA » (Digital Operational Resilience Act) a pour objectif d’améliorer la résilience opérationnelle informatique des acteurs des services financiers en mettant en place un cadre de gouvernance et de contrôle interne spécifique (ICT risk management framework). Il est intéressant de voir que l’assureur se doit de maîtriser la gestion du risque de tiers avec notamment la supervision directe des prestataires de services « critiques».</p>
           </div>
-          <div class="ps-8 pb-8 lg:self-end lg:w-1/2 lg:ps-40 lg:pe-12 lg:py-12">
-            <h2 class="mt-10 text-2xl font-extrabold mb-8 lg:text-4xl">OPTIMISER</h2>
-            <h3 class="italic text-blue-light font-extrabold my-8 text-lg lg:text-xl">Secteur maîtrisé = process maîtrisé</h3>
-            <p>Stan connaît déjà votre métier, il n’a besoin que de s’approprier les spécificités de votre processus. Ainsi, pas besoin de tout reconstruire de 0, ce qui nous permet de mettre Stan au travail plus vite, plus facilement et sans trous dans le budget.</p>
-            <p>Déjà entraîné à gérer les données issues de l’assurance, Stan ne nécessite que du “fine-tuning” pour s’adapter à sa nouvelle mission. Pas besoin de 3 mois de réunions, pas besoin de mobiliser toute votre DSI : vous gérez vos clients, nous gérons vos process !</p>
-            <h3 class="italic text-blue-light font-extrabold my-8 text-lg lg:text-xl">Stan libère</h3>
-            <p>Automatiser des tâches et des process, c’est gagner du temps, des ressources humaines et financières. Stan va aider le client à retrouver de la marge en automatisant des tâches de gestion et commerciales.</p>
-          </div>
+        </div>
+        <div class="ps-8 pb-8 lg:self-end lg:w-1/2 lg:ps-40 lg:pe-12 lg:py-12">
+          <h2 class="mt-10 text-2xl font-extrabold mb-8 lg:text-4xl">OPTIMISER</h2>
+          <h3 class="italic text-blue-light font-extrabold my-8 text-lg lg:text-xl">Secteur maîtrisé = process maîtrisé</h3>
+          <p>Stan connaît déjà votre métier, il n’a besoin que de s’approprier les spécificités de votre processus. Ainsi, pas besoin de tout reconstruire de 0, ce qui nous permet de mettre Stan au travail plus vite, plus facilement et sans trous dans le budget.</p>
+          <p>Déjà entraîné à gérer les données issues de l’assurance, Stan ne nécessite que du “fine-tuning” pour s’adapter à sa nouvelle mission. Pas besoin de 3 mois de réunions, pas besoin de mobiliser toute votre DSI : vous gérez vos clients, nous gérons vos process !</p>
+          <h3 class="italic text-blue-light font-extrabold my-8 text-lg lg:text-xl">Stan libère</h3>
+          <p>Automatiser des tâches et des process, c’est gagner du temps, des ressources humaines et financières. Stan va aider le client à retrouver de la marge en automatisant des tâches de gestion et commerciales.</p>
         </div>
       </div>
       <img src="/assets/images/duo-working.png" alt="Jérémy Marlin et Jean-Baptiste Richardet en train d'optimiser un processus Stan" class="w-full lg:w-2/5 lg:self-start lg:-mt-96 lg:relative lg:-top-44">
@@ -121,24 +121,24 @@
             <p>Note d’opportunité sur l’utilisation de la donnée dans le cadre de projets identifiés (digitalisation de la relation client, automatisation des adhésions/affiliations, renouvellement de contrat, connexion avec des SIRH, gestion des dispenses d’affiliation).</p>
           </template>
           <template #livrable>
-            <h4>Etat des lieux</h4>
-            <ul>
+            <h4>État des lieux</h4>
+            <ul class="list-disc">
               <li>Cartographie de la donnée</li>
               <li>Intelligence économique autour des aspects cyber/IA/souveraineté</li>
             </ul>
-            <h4>Pour passer de l’état des lieux à la préco</h4>
-            <ul>
+            <h4 class="mt-4">Pour passer de l’état des lieux à la préco</h4>
+            <ul class="list-disc">
               <li>Des ateliers avec des experts métiers et des panels d’usagers cibles.</li>
               <li>Définition de problématiques à adresser</li>
             </ul>
-            <h4>Préco</h4>
-            <ul>
+            <h4 class="mt-4">Préco</h4>
+            <ul class="list-disc">
               <li>Cahier de spécifications pour mise en place de solutions techniques</li>
               <li>Rapport d’étonnement et d’opportunités</li>
             </ul>
           </template>
           <template #quoi>
-            <ul>
+            <ul class="list-disc">
               <li>Etablir une stratégie de valorisation des données présentes dans vos SI</li>
               <li>Anticiper les nouveaux usages (chatGPT, IA, phygital, plateformisation)</li>
             </ul>
@@ -155,10 +155,10 @@
             <p>Pour les entreprises ayant un plan stratégique de valorisation de leurs données</p>
           </template>
           <template #accompagnement>
-            <p><ul>
+            <ul class="list-disc">
               <li>Sélection d’un périmètre réduit pour tester les premières itérations.</li>
               <li>Validation des connexion techniques entre Stan et les différents applicatifs internes/externes</li>
-            </ul></p>
+            </ul>
           </template>
           <template #livrable>
             <p>Création de la documentation technique générée par le POC</p>
@@ -389,5 +389,29 @@ ul.arrowed > li::before {
   color: rgb(var(--blue-dark));
   position: relative;
   left: -.5rem;
+}
+
+@media (min-width: 1024px) {
+  #simplifier {
+    background-image: url(/assets/images/bkg_accompagnement_1.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  #impasse {
+    background-image: url(/assets/images/bkg_accompagnement_2.svg);
+    background-repeat: no-repeat;
+  }
+
+  #protege {
+    background-image: url(/assets/images/bkg_accompagnement_3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: -15rem;
+  }
+
+  #protege > div {
+    background-color: transparent;
+  }
 }
 </style>

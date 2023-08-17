@@ -45,7 +45,7 @@
     </div>
   </section>
   <section class="bg-white pt-8 px-8 lg:px-16 flex flex-col items-center lg:items-start border-b-2 border-blue-dark mb-4lg:border-b-0 lg:justify-evenly" id="offres">
-    <SectionTitleComponent title="découvrez nos offres" shadow="offres" class="mb-6" dark>
+    <SectionTitleComponent title="découvrez nos offres Stan" shadow="offres" class="mb-6" dark>
       <img class="w-2/4" src="/assets/images/Stan_logo_bleu.svg" alt="Stan">
     </SectionTitleComponent>
     <div class="offers">
@@ -97,7 +97,7 @@
     <SectionTitleComponent title="Nos clients (anonymes) le disent" shadow="Témoignages" dark class="w-full lg:w-2/4 lg:ms-40"/>
     <img src="/assets/images/line_zigzag.svg" alt="" class="hidden lg:block lg:absolute lg:left:0 lg:w-64 lg:z-10">
     <p class="italic text-blue-dark text-[1.1rem] my-8 lg:w-2/4 lg:ms-40">Pour des raisons de sécurité, vous ne verrez jamais les clients de Stan. Nous préservons leur anonymat et leur (cyber)sécurité.</p>
-    <SliderComponent class="lg:ms-60" hideControls>
+    <SliderComponent hideControls>
       <template #0>
         <div class="border-2 border-blue-light flex flex-col text-blue-dark px-8 py-4 justify-around items-center lg:border-0 lg:flex-row lg:justify-center lg:mb-24">
           <div class="lg:bg-blue-dark lg:text-white lg:text-end lg:w-1/3 lg:relative lg:left-16 lg:ps-24 lg:pe-6 lg:py-12 lg:z-10">

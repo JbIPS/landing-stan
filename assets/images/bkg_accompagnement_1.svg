@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Calque_1"
+   viewBox="0 0 935.70642 608.71003"
+   version="1.1"
+   sodipodi:docname="bkg_accompagnement_1.svg"
+   width="935.70642"
+   height="608.71002"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview23"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.53978521"
+     inkscape:cx="490.00972"
+     inkscape:cy="409.42211"
+     inkscape:window-width="2048"
+     inkscape:window-height="1083"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Calque_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:none;stroke:#003caa;stroke-miterlimit:10;stroke-width:3px;}</style>
+  </defs>
+  <g
+     id="Groupe_3043"
+     transform="matrix(1,0,0,0.47617946,-978.14,-357.83853)">
+    <g
+       id="Groupe_de_masques_3">
+      <line
+         id="Ligne_89"
+         class="cls-1"
+         x1="1852.62"
+         y1="1084"
+         x2="1852.62"
+         y2="2027.3" />
+    </g>
+  </g>
+  <g
+     id="Groupe_3041"
+     transform="translate(-978.14,-925.65999)">
+    <line
+       id="Ligne_84"
+       class="cls-1"
+       x1="978.14001"
+       y1="1027.49"
+       x2="1607.23"
+       y2="1027.49" />
+    <line
+       id="Ligne_85"
+       class="cls-1"
+       x1="1912.673"
+       y1="1027.54"
+       x2="1701.62"
+       y2="1027.54" />
+    <path
+       id="Tracé_1646"
+       class="cls-1"
+       d="m 1607.23,1027.49 h 20.03 v -2.88 c 0.02,-53.84 43.69,-97.47 97.53,-97.45 53.81,0.02 97.43,43.64 97.45,97.45 v 3.44" />
+    <path
+       id="Tracé_1647"
+       class="cls-1"
+       d="m 1627.25,1027.49 v 55.6 H 978.14" />
+    <path
+       id="Tracé_1648"
+       class="cls-1"
+       d="m 1749.31,1027.54 v -1.86 c 0,-13.17 -10.67,-23.84 -23.84,-23.84 -13.17,0 -23.84,10.67 -23.84,23.84 l -0.02,57.41 h 212.2364"
+       sodipodi:nodetypes="cssccc" />
+    <line
+       id="Ligne_87"
+       class="cls-1"
+       x1="1627.25"
+       y1="1083.09"
+       x2="1627.25"
+       y2="1534.37" />
+    <line
+       id="Ligne_88"
+       class="cls-1"
+       x1="1701.62"
+       y1="1083.09"
+       x2="1701.62"
+       y2="1534.37" />
+  </g>
+</svg>

@@ -32,7 +32,7 @@
       </ul>
     </div>
   </section>
-  <section class="bg-blue pt-8 flex flex-col items-center lg:items-start lg:pe-16 lg:relative">
+  <section class="bg-blue pt-8 flex flex-col items-center lg:items-start lg:pe-16 lg:relative" id="metiers">
     <div class="hidden lg:block lg:border-b-2 lg:border-s-2 lg:border-blue-light lg:w-1/3 lg:h-10 lg:absolute lg:bottom-14 lg:left-1/4">
     </div>
     <div class="border-t-2 border-e-2 border-blue-light mt-2 pt-8 me-6 relative lg:border-0 lg:w-7/12">
@@ -49,11 +49,11 @@
       <p class="text-blue-dark lg:ps-16">Devenir la référence en matière de gestion sécurisée de la donnée, d’abord sur le marché de l’assurance. Puis dans la santé, pour aller ensuite dans tous les secteurs manipulant de la donnée.</p>
     </div>
   </section>
-  <section class="pb-6 bg-blue pt-8 lg:grid lg:grid-cols-2 lg:grid-rows-2">
+  <section class="pb-6 bg-blue pt-8 lg:grid lg:grid-cols-2 lg:grid-rows-2" id="madeinfrance">
     <SectionTitleComponent title="une solution made in france" shadow="france" id="souverainete" class="px-8 lg:ps-32 lg:pe-16 lg:pt-16 lg:col-start-1 lg:row-start-1"/>
     <div class="px-8 lg:col-start-2 lg:row-span-full lg:py-32 lg:mt-20">
       <h3 class="font-extrabold my-6 text-2xl">NOTRE SOUVERAINETÉ NUMÉRIQUE</h3>
-      <p><strong>La souveraineté numérique</strong>, c’est la capacité à maîtriser l’ensemble des technologies, tant d’un point de vue économique que social et politique. Autrement dit, la capacité de maîtrise, <strong>d’autonomieet d’indépendance</strong>.<br/>
+      <p><strong>La souveraineté numérique</strong>, c’est la capacité à maîtriser l’ensemble des technologies, tant d’un point de vue économique que social et politique. Autrement dit, la capacité de maîtrise, <strong>d’autonomie et d’indépendance</strong>.<br/>
         Le numérique, et surtout les données personnelles des internautes, est devenu le nouveau terrain d’affrontement des grandes puissances mondiales.</p>
       <h4 class="mt-10">Pour Stan, la souveraineté commence par :</h4>
       <ul role="list" class="sovereign">
@@ -256,7 +256,7 @@ h4, .h4 {
 .sovereign::before {
   content: '';
   width: 2px;
-  height: 82%;
+  height: 86%;
   background: rgb(var(--blue-light));
   position: absolute;
   left: 0;
@@ -341,5 +341,14 @@ h4, .h4 {
   border: 1px solid rgb(var(--white));
   flex-grow: 1;
   text-align: center; 
+}
+
+#metiers {
+  background-image: url(/assets/images/bkg_apropos_1.svg);
+  background-position-x: right;
+}
+
+#madeinfrance {
+  background-image: url(/assets/images/bkg_apropos_2.svg);
 }
 </style>
