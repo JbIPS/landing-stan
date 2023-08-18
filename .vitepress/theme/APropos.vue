@@ -99,7 +99,7 @@
         <div class="img-container">
           <img src="/assets/images/secnumcloud.jpg" alt="Logo du visa de sécurité SecNumCloud délivré par l'ANSSI">
         </div>
-        <p><strong>SecNumCloud</strong> : Cette certification de l’ANSSI atteste de notre effort pour la sécurité de notre système, des systèmes de défense numérique à la formation de nos employés en passant par une sélection rigoureuse lors de l’embauche ou le choix de prestataires.</p>
+        <p><strong>SecNumCloud</strong>(en cours de certification) : Cette certification de l’ANSSI atteste de notre effort pour la sécurité de notre système, des systèmes de défense numérique à la formation de nos employés en passant par une sélection rigoureuse lors de l’embauche ou le choix de prestataires.</p>
       </div>
     </div>
     <!-- <h3>NOS ENGAGEMENTS</h3> -->
