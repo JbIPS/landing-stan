@@ -53,7 +53,6 @@ function closeMenu() {
     background: none;
     color: rgb(var(--white));
     width: 100%;
-    border-bottom: none;
     line-height: 1rem;
     left: 0;
     height: unset;
@@ -79,6 +78,7 @@ function closeMenu() {
 
   li {
     position: relative;
+    padding-bottom: .5rem;
   }
 
   li ul {
@@ -99,7 +99,7 @@ function closeMenu() {
     left: -.3rem;
   }
 
-  li:hover ul {
+  li:hover ul, li ul:hover {
     display: block;
   }
 }

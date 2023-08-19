@@ -81,6 +81,8 @@ nav.navbar {
     position: fixed;
     width: 100%;
     z-index: 998;
+    border: none;
+    background-color: transparent;
   }
 }
 </style>
