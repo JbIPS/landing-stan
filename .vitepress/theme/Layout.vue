@@ -9,6 +9,7 @@ import MenuComponent from "./MenuComponent.vue";
 // https://vitepress.dev/reference/runtime-api#usedata
 const { site, frontmatter } = useData();
 const menuToggle = ref(null)
+console.log(frontmatter.value.layout)
 </script>
 
 <template>
