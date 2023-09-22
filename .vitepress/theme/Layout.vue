@@ -12,25 +12,24 @@ const menuToggle = ref(null)
 </script>
 
 <template>
-  <nav :class="`navbar py-2 pe-6 flex ${frontmatter.layout === 'home' ? 'justify-end transparent' : 'justify-between'}`">
-    <a v-show="frontmatter.layout !== 'home'" href="/"><img src="/assets/images/Stan_symbole_blanc.svg" alt="Logo Stan blanc" class="ms-4 w-7"></a>
-    <input type="checkbox" id="menu_toggle" class="hidden" ref="menuToggle">
-    <MenuComponent :menu-toggle="menuToggle"/>
-    <label for="menu_toggle" class="w-10 cursor-pointer lg:hidden">
-      <img
-        src="/assets/images/menu_open.svg"
-        alt="Ouvrir le menu"
-      />
-    </label>
-  </nav>
-  <main>
-    <ClientOnly>
+  <ClientOnly>
+    <nav :class="`navbar py-2 pe-6 flex ${frontmatter.layout === 'home' ? 'justify-end transparent' : 'justify-between'}`">
+      <a v-show="frontmatter.layout !== 'home'" href="/"><img src="/assets/images/Stan_symbole_blanc.svg" alt="Logo Stan blanc" class="ms-4 w-7"></a>
+      <input type="checkbox" id="menu_toggle" class="hidden" ref="menuToggle">
+      <MenuComponent :menu-toggle="menuToggle"/>
+      <label for="menu_toggle" class="w-10 cursor-pointer lg:hidden">
+        <img
+          src="/assets/images/menu_open.svg"
+          alt="Ouvrir le menu"
+        />
+      </label>
+    </nav>
+    <main>
       <Home :description="site.description" :title="site.title" v-if="frontmatter.layout === 'home'"/>
       <APropos v-else-if="frontmatter.layout === 'a_propos'"/>
       <Offre v-else-if="frontmatter.layout === 'accompagnement'"/>
-    </ClientOnly>
-  </main>
-  <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2 lg:py-10 lg:max-h-16">
+    </main>
+    <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2 lg:py-10 lg:max-h-16">
       <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/6 pe-2 lg:pe-8 lg:w-auto">
       <div class="flex w-1/6 border-s-2 justify-around h-6 items-center lg:justify-center lg:gap-4 lg:h-full">
         <a href=""><img src="/assets/images/logo_linkedin.svg" alt="Logo LinkedIn" class="lg:w-10"></a>
@@ -41,8 +40,9 @@ const menuToggle = ref(null)
         <a href="/mentions_legales">Mentions légales</a>
         <a href="/cgv">CGV</a>
       </div>
-    <p class="w-1/3 text-[8px] text-center ps-2 lg:text-xs lg:px-8">Pas de cookies sur notre site. La meilleure façon de protéger vos données, c’est de ne pas les garder.</p>
-  </footer>
+      <p class="w-1/3 text-[8px] text-center ps-2 lg:text-xs lg:px-8">Pas de cookies sur notre site. La meilleure façon de protéger vos données, c’est de ne pas les garder.</p>
+    </footer>
+  </ClientOnly>
 </template>
 <style scoped>
 nav.navbar {
