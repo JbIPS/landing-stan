@@ -12,7 +12,7 @@ const menuToggle = ref(null)
 </script>
 
 <template>
-  <nav :class="`navbar py-2 pe-6 flex ${frontmatter.layout === 'home' ? 'justify-end' : 'justify-between'}`">
+  <nav :class="`navbar py-2 pe-6 flex ${frontmatter.layout === 'home' ? 'justify-end transparent' : 'justify-between'}`">
     <a v-show="frontmatter.layout !== 'home'" href="/"><img src="/assets/images/Stan_symbole_blanc.svg" alt="Logo Stan blanc" class="ms-4 w-7"></a>
     <input type="checkbox" id="menu_toggle" class="hidden" ref="menuToggle">
     <MenuComponent :menu-toggle="menuToggle"/>
@@ -24,15 +24,9 @@ const menuToggle = ref(null)
     </label>
   </nav>
   <main>
-    <div v-if="frontmatter.layout === 'home'">
-      <Home :description="site.description" :title="site.title"/>
-    </div>
-    <div v-else-if="frontmatter.layout === 'a_propos'">
-      <APropos />
-    </div>
-    <div v-else-if="frontmatter.layout === 'accompagnement'">
-      <Offre/>
-    </div>
+    <Home :description="site.description" :title="site.title" v-if="frontmatter.layout === 'home'"/>
+    <APropos v-else-if="frontmatter.layout === 'a_propos'"/>
+    <Offre v-else-if="frontmatter.layout === 'accompagnement'"/>
   </main>
   <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2 lg:py-10 lg:max-h-16">
       <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/6 pe-2 lg:pe-8 lg:w-auto">
@@ -82,6 +76,10 @@ nav.navbar {
     width: 100%;
     z-index: 998;
     border: none;
+    background-color: rgb(var(--blue));
+  }
+
+  nav.navbar.transparent {
     background-color: transparent;
   }
 }
