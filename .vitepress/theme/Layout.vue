@@ -9,7 +9,6 @@ import MenuComponent from "./MenuComponent.vue";
 // https://vitepress.dev/reference/runtime-api#usedata
 const { site, frontmatter } = useData();
 const menuToggle = ref(null)
-console.log(frontmatter.value.layout)
 </script>
 
 <template>
@@ -25,9 +24,11 @@ console.log(frontmatter.value.layout)
     </label>
   </nav>
   <main>
-    <Home :description="site.description" :title="site.title" v-if="frontmatter.layout === 'home'"/>
-    <APropos v-else-if="frontmatter.layout === 'a_propos'"/>
-    <Offre v-else-if="frontmatter.layout === 'accompagnement'"/>
+    <ClientOnly>
+      <Home :description="site.description" :title="site.title" v-if="frontmatter.layout === 'home'"/>
+      <APropos v-else-if="frontmatter.layout === 'a_propos'"/>
+      <Offre v-else-if="frontmatter.layout === 'accompagnement'"/>
+    </ClientOnly>
   </main>
   <footer class="text-blue-dark flex items-center justify-center text-[8px] py-2 lg:py-10 lg:max-h-16">
       <img src="/assets/images/Stan_logo_bleu.svg" alt="Logo Stan" class="w-1/6 pe-2 lg:pe-8 lg:w-auto">
