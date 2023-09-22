@@ -192,7 +192,7 @@
     </section>
     <section class="bg-blue">
       <SectionTitleComponent title="cas d'usage" shadow="cas d'usage" class="mb-8 px-8 lg:ps-32" id="cas_usage"/>
-      <SliderComponent class="bg-white lg:w-11/12">
+      <SliderComponent class="bg-white lg:w-11/12" show-arrows>
         <template #0>
           <div class="lg:bg-blue">
             <h2 class="px-8 text-2xl font-extrabold pb-6 bg-blue lg:w-1/2 lg:text-3xl lg:ps-20">INDUSTRIALISATION DES SORTIES DE CONTRATS COLLECTIFS : LOI EVIN, ANI ET AUTRES CONTRATS INDIVIDUELS</h2>

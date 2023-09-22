@@ -83,6 +83,7 @@
           <img src="/assets/images/dot_teal.svg" alt="">
         </li>
       </ul>
+      <ButtonComponent href="/Rapport souveraineté assureurs santé.pdf" text="Découvrez notre rapport sur la souveraineté des assureurs santé" class="w-2/4 my-8 block"/>
     </div>
     <img src="/assets/images/stan_working.jpg" alt="Les équipes de Stan travaillant autour d'une table dans les locaux de l'entreprise" class="lg:w-10/12">
   </section>

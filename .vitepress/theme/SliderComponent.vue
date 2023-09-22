@@ -7,6 +7,10 @@
         </li>
       </ul>
     </div>
+    <div v-if="showArrows" class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+    </div>
     <div v-if="!hideControls" class="glide__bullets" data-glide-el="controls[nav]">
       <button class="glide__bullet" :data-glide-dir="`=${idx}`" v-for="(slot, idx) in $slots"></button>
     </div>
@@ -20,6 +24,7 @@ import Glide, { Controls, Swipe, Autoplay } from '@glidejs/glide/dist/glide.modu
 
 defineProps<{
   hideControls?: boolean
+  showArrows?: boolean
 }>();
 
 const glider = ref(null)
@@ -33,6 +38,18 @@ onMounted(() => {
 })
 </script>
 <style>
+.glide__arrow {
+  position: absolute;
+  color: rgb(var(--blue));
+  font-size: 2rem;
+  top: calc(50% - 2rem);
+  padding: 0 .5rem;
+}
+
+.glide__arrow--right {
+  right: 0;
+}
+
 .glide__bullets {
   display: flex;
   justify-content: center; 
